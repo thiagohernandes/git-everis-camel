@@ -34,7 +34,8 @@ public class ProjetoBaseApplication {
 //		listaRoutes.add(new R04Http4PredicateChoice());
 //		listaRoutes.add(new R05Bean());
 //		listaRoutes.add(new R06JettyToRestIntegracao());
-//		utilApp.runContextCamel(listaRoutes,4000,true);
+		utilApp.runContextCamel(listaRoutes,4000,true);
+		
 	}  
 	
 }
