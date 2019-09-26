@@ -1,0 +1,465 @@
+2019-06-11 08:10:15,460 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 35476 (C:\Dev\git-prjs\projeto-base\target\classes started by thernans in C:\Dev\git-prjs\projeto-base)
+2019-06-11 08:10:15,466 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-06-11 08:10:15,466 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-06-11 08:10:17,004 INFO com.camel.code.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-06-11 08:10:18,208 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8082/minha-primeira-rota
+2019-06-11 08:10:18,260 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8083/msg-to-rest
+2019-06-11 08:10:18,268 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8084/rota84
+2019-06-11 08:10:18,277 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8087/integrar-api-funcionarios
+2019-06-11 08:10:18,285 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8088/predicate-teste
+2019-06-11 08:10:18,294 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8089/predicate-teste
+2019-06-11 08:10:18,303 INFO com.camel.code.util.UtilApp [main] *********** Sucesso - contexto do Camel executando...
+2019-06-11 08:10:18,671 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 3.549 seconds (JVM running for 4.641)
+2019-06-11 08:10:31,065 INFO com.camel.code.controller.FuncionarioController [http-nio-8080-exec-1] ********** todosFuncionarios - Controller - call - Todos Funcionários
+2019-06-11 08:10:31,149 INFO com.camel.code.route.R05Bean$1 [qtp357291163-97] ---> Lista antes [{"codigo":221,"nome":"Nelson da Silva","salario":6800.0},{"codigo":432,"nome":"Débora Vieira","salario":9000.0},{"codigo":510,"nome":"Gilson Antunes Braga","salario":7800.0},{"codigo":788,"nome":"Cleusa Dias Duarte","salario":6000.0},{"codigo":105,"nome":"Marcelo Kiven Straus","salario":8100.0}]
+2019-06-11 08:10:31,181 ERROR org.apache.camel.spi.CamelLogger [qtp357291163-97] Failed delivery for (MessageId: ID-UDI-8KPZFV2-1560251430932-0-3 on ExchangeId: ID-UDI-8KPZFV2-1560251430932-0-1). Exhausted after delivery attempt: 1 caught: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `com.camel.code.domain.Funcionario` (no Creators, like default construct, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (String)"[{"codigo":221,"nome":"Nelson da Silva","salario":6800.0},{"codigo":432,"nome":"Débora Vieira","salario":9000.0},{"codigo":510,"nome":"Gilson Antunes Braga","salario":7800.0},{"codigo":788,"nome":"Cleusa Dias Duarte","salario":6000.0},{"codigo":105,"nome":"Marcelo Kiven Straus","salario":8100.0}]"; line: 1, column: 3] (through reference chain: java.util.ArrayList[0])
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route8            ] [route8            ] [jetty:http://localhost:8089/predicate-teste                                   ] [       245]
+[route8            ] [to7               ] [direct:httpfuncionario3                                                       ] [         0]
+[route9            ] [bean1             ] [bean[com.camel.code.bean.GerarObjetoBean]                                     ] [         2]
+[route9            ] [convertBodyTo4    ] [convertBodyTo[java.lang.String]                                               ] [         1]
+[route9            ] [to8               ] [http4://localhost:8080/api/funcionarios/todos?bridgeEndpoint=true             ] [       203]
+[route9            ] [process10         ] [Processor@0xdb75a68                                                           ] [         0]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `com.camel.code.domain.Funcionario` (no Creators, like default construct, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (String)"[{"codigo":221,"nome":"Nelson da Silva","salario":6800.0},{"codigo":432,"nome":"Débora Vieira","salario":9000.0},{"codigo":510,"nome":"Gilson Antunes Braga","salario":7800.0},{"codigo":788,"nome":"Cleusa Dias Duarte","salario":6000.0},{"codigo":105,"nome":"Marcelo Kiven Straus","salario":8100.0}]"; line: 1, column: 3] (through reference chain: java.util.ArrayList[0])
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:67)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportBadDefinition(DeserializationContext.java:1452)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1028)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1297)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:326)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:159)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:286)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:245)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:27)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4013)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3023)
+	at com.camel.code.route.R05Bean$1.process(R05Bean.java:41)
+	at org.apache.camel.support.processor.DelegateSyncProcessor.process(DelegateSyncProcessor.java:63)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$RedeliveryState.run(RedeliveryErrorHandler.java:481)
+	at org.apache.camel.support.ReactiveHelper$Worker.schedule(ReactiveHelper.java:130)
+	at org.apache.camel.support.ReactiveHelper.scheduleMain(ReactiveHelper.java:35)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:158)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:223)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:223)
+	at org.apache.camel.component.jetty.CamelContinuationServlet.doService(CamelContinuationServlet.java:218)
+	at org.apache.camel.http.common.CamelServlet.service(CamelServlet.java:79)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1623)
+	at org.eclipse.jetty.servlets.MultiPartFilter.doFilter(MultiPartFilter.java:150)
+	at org.apache.camel.component.jetty.CamelFilterWrapper.doFilter(CamelFilterWrapper.java:43)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.lang.Thread.run(Unknown Source)
+2019-06-11 08:35:04,318 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 18148 (C:\Dev\git-prjs\projeto-base\target\classes started by thernans in C:\Dev\git-prjs\projeto-base)
+2019-06-11 08:35:04,321 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-06-11 08:35:04,321 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-06-11 08:35:05,243 INFO com.camel.code.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-06-11 08:35:06,190 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8082/minha-primeira-rota
+2019-06-11 08:35:06,237 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8083/msg-to-rest
+2019-06-11 08:35:06,245 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8084/rota84
+2019-06-11 08:35:06,253 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8087/integrar-api-funcionarios
+2019-06-11 08:35:06,261 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8088/predicate-teste
+2019-06-11 08:35:06,268 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8089/predicate-teste
+2019-06-11 08:35:06,276 INFO com.camel.code.util.UtilApp [main] *********** Sucesso - contexto do Camel executando...
+2019-06-11 08:35:06,588 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 2.516 seconds (JVM running for 3.374)
+2019-06-11 08:35:15,338 INFO com.camel.code.controller.FuncionarioController [http-nio-8080-exec-1] ********** todosFuncionarios - Controller - call - Todos Funcionários
+2019-06-11 08:35:15,411 INFO com.camel.code.route.R05Bean$1 [qtp1170173753-96] org.apache.camel.converter.stream.CachedOutputStream$WrappedInputStream@52a3e8d6
+2019-06-11 08:40:19,183 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 30500 (C:\Dev\git-prjs\projeto-base\target\classes started by thernans in C:\Dev\git-prjs\projeto-base)
+2019-06-11 08:40:19,185 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-06-11 08:40:19,186 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-06-11 08:40:20,106 INFO com.camel.code.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-06-11 08:40:20,939 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8082/minha-primeira-rota
+2019-06-11 08:40:20,984 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8083/msg-to-rest
+2019-06-11 08:40:20,992 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8084/rota84
+2019-06-11 08:40:21,000 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8087/integrar-api-funcionarios
+2019-06-11 08:40:21,009 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8088/predicate-teste
+2019-06-11 08:40:21,017 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8089/predicate-teste
+2019-06-11 08:40:21,027 INFO com.camel.code.util.UtilApp [main] *********** Sucesso - contexto do Camel executando...
+2019-06-11 08:40:21,362 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 2.455 seconds (JVM running for 3.318)
+2019-06-11 08:40:28,462 INFO com.camel.code.controller.FuncionarioController [http-nio-8080-exec-1] ********** todosFuncionarios - Controller - call - Todos Funcionários
+2019-06-11 08:40:28,531 ERROR org.apache.camel.spi.CamelLogger [qtp1579823168-95] Failed delivery for (MessageId: ID-UDI-8KPZFV2-1560253228355-0-3 on ExchangeId: ID-UDI-8KPZFV2-1560253228355-0-1). Exhausted after delivery attempt: 1 caught: java.lang.ClassCastException: org.apache.camel.converter.stream.CachedOutputStream$WrappedInputStream cannot be cast to java.util.List
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route8            ] [route8            ] [jetty:http://localhost:8089/predicate-teste                                   ] [       173]
+[route8            ] [to7               ] [direct:httpfuncionario3                                                       ] [         0]
+[route9            ] [bean1             ] [bean[com.camel.code.bean.GerarObjetoBean]                                     ] [         2]
+[route9            ] [convertBodyTo4    ] [convertBodyTo[java.lang.String]                                               ] [         1]
+[route9            ] [to8               ] [http4://localhost:8080/api/funcionarios/todos?bridgeEndpoint=true             ] [       163]
+[route9            ] [process10         ] [Processor@0x75df6e14                                                          ] [         0]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+java.lang.ClassCastException: org.apache.camel.converter.stream.CachedOutputStream$WrappedInputStream cannot be cast to java.util.List
+	at com.camel.code.route.R05Bean$1.process(R05Bean.java:36)
+	at org.apache.camel.support.processor.DelegateSyncProcessor.process(DelegateSyncProcessor.java:63)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$RedeliveryState.run(RedeliveryErrorHandler.java:481)
+	at org.apache.camel.support.ReactiveHelper$Worker.schedule(ReactiveHelper.java:130)
+	at org.apache.camel.support.ReactiveHelper.scheduleMain(ReactiveHelper.java:35)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:158)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:223)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:223)
+	at org.apache.camel.component.jetty.CamelContinuationServlet.doService(CamelContinuationServlet.java:218)
+	at org.apache.camel.http.common.CamelServlet.service(CamelServlet.java:79)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1623)
+	at org.eclipse.jetty.servlets.MultiPartFilter.doFilter(MultiPartFilter.java:150)
+	at org.apache.camel.component.jetty.CamelFilterWrapper.doFilter(CamelFilterWrapper.java:43)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.lang.Thread.run(Unknown Source)
+2019-06-11 08:42:19,756 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 38448 (C:\Dev\git-prjs\projeto-base\target\classes started by thernans in C:\Dev\git-prjs\projeto-base)
+2019-06-11 08:42:19,758 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-06-11 08:42:19,759 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-06-11 08:42:20,737 INFO com.camel.code.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-06-11 08:42:21,586 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8082/minha-primeira-rota
+2019-06-11 08:42:21,632 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8083/msg-to-rest
+2019-06-11 08:42:21,639 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8084/rota84
+2019-06-11 08:42:21,646 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8087/integrar-api-funcionarios
+2019-06-11 08:42:21,654 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8088/predicate-teste
+2019-06-11 08:42:21,661 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8089/predicate-teste
+2019-06-11 08:42:21,669 INFO com.camel.code.util.UtilApp [main] *********** Sucesso - contexto do Camel executando...
+2019-06-11 08:42:21,990 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 2.493 seconds (JVM running for 3.361)
+2019-06-11 08:42:31,750 INFO com.camel.code.controller.FuncionarioController [http-nio-8080-exec-1] ********** todosFuncionarios - Controller - call - Todos Funcionários
+2019-06-11 08:42:31,816 ERROR org.apache.camel.spi.CamelLogger [qtp866370634-95] Failed delivery for (MessageId: ID-UDI-8KPZFV2-1560253351642-0-3 on ExchangeId: ID-UDI-8KPZFV2-1560253351642-0-1). Exhausted after delivery attempt: 1 caught: java.lang.NullPointerException
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route8            ] [route8            ] [jetty:http://localhost:8089/predicate-teste                                   ] [       171]
+[route8            ] [to7               ] [direct:httpfuncionario3                                                       ] [         0]
+[route9            ] [bean1             ] [bean[com.camel.code.bean.GerarObjetoBean]                                     ] [         2]
+[route9            ] [convertBodyTo4    ] [convertBodyTo[java.lang.String]                                               ] [         1]
+[route9            ] [to8               ] [http4://localhost:8080/api/funcionarios/todos?bridgeEndpoint=true             ] [       161]
+[route9            ] [process10         ] [Processor@0x7f5228f                                                           ] [         0]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+java.lang.NullPointerException: null
+	at com.camel.code.route.R05Bean$1.process(R05Bean.java:37)
+	at org.apache.camel.support.processor.DelegateSyncProcessor.process(DelegateSyncProcessor.java:63)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$RedeliveryState.run(RedeliveryErrorHandler.java:481)
+	at org.apache.camel.support.ReactiveHelper$Worker.schedule(ReactiveHelper.java:130)
+	at org.apache.camel.support.ReactiveHelper.scheduleMain(ReactiveHelper.java:35)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:158)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:223)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:223)
+	at org.apache.camel.component.jetty.CamelContinuationServlet.doService(CamelContinuationServlet.java:218)
+	at org.apache.camel.http.common.CamelServlet.service(CamelServlet.java:79)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1623)
+	at org.eclipse.jetty.servlets.MultiPartFilter.doFilter(MultiPartFilter.java:150)
+	at org.apache.camel.component.jetty.CamelFilterWrapper.doFilter(CamelFilterWrapper.java:43)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.lang.Thread.run(Unknown Source)
+2019-06-11 08:44:25,587 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 25072 (C:\Dev\git-prjs\projeto-base\target\classes started by thernans in C:\Dev\git-prjs\projeto-base)
+2019-06-11 08:44:25,590 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-06-11 08:44:25,590 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-06-11 08:44:26,497 INFO com.camel.code.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-06-11 08:44:27,337 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8082/minha-primeira-rota
+2019-06-11 08:44:27,384 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8083/msg-to-rest
+2019-06-11 08:44:27,392 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8084/rota84
+2019-06-11 08:44:27,401 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8087/integrar-api-funcionarios
+2019-06-11 08:44:27,414 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8088/predicate-teste
+2019-06-11 08:44:27,422 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8089/predicate-teste
+2019-06-11 08:44:27,431 INFO com.camel.code.util.UtilApp [main] *********** Sucesso - contexto do Camel executando...
+2019-06-11 08:44:27,770 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 2.429 seconds (JVM running for 3.295)
+2019-06-11 08:44:31,092 INFO com.camel.code.controller.FuncionarioController [http-nio-8080-exec-1] ********** todosFuncionarios - Controller - call - Todos Funcionários
+2019-06-11 08:44:31,162 ERROR org.apache.camel.spi.CamelLogger [qtp384752294-95] Failed delivery for (MessageId: ID-UDI-8KPZFV2-1560253470984-0-3 on ExchangeId: ID-UDI-8KPZFV2-1560253470984-0-1). Exhausted after delivery attempt: 1 caught: java.lang.NullPointerException
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route8            ] [route8            ] [jetty:http://localhost:8089/predicate-teste                                   ] [       175]
+[route8            ] [to7               ] [direct:httpfuncionario3                                                       ] [         0]
+[route9            ] [bean1             ] [bean[com.camel.code.bean.GerarObjetoBean]                                     ] [         2]
+[route9            ] [convertBodyTo4    ] [convertBodyTo[java.lang.String]                                               ] [         1]
+[route9            ] [to8               ] [http4://localhost:8080/api/funcionarios/todos?bridgeEndpoint=true             ] [       163]
+[route9            ] [process10         ] [Processor@0x23f92003                                                          ] [         0]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+java.lang.NullPointerException: null
+	at com.camel.code.route.R05Bean$1.process(R05Bean.java:36)
+	at org.apache.camel.support.processor.DelegateSyncProcessor.process(DelegateSyncProcessor.java:63)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$RedeliveryState.run(RedeliveryErrorHandler.java:481)
+	at org.apache.camel.support.ReactiveHelper$Worker.schedule(ReactiveHelper.java:130)
+	at org.apache.camel.support.ReactiveHelper.scheduleMain(ReactiveHelper.java:35)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:158)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:223)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:223)
+	at org.apache.camel.component.jetty.CamelContinuationServlet.doService(CamelContinuationServlet.java:218)
+	at org.apache.camel.http.common.CamelServlet.service(CamelServlet.java:79)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1623)
+	at org.eclipse.jetty.servlets.MultiPartFilter.doFilter(MultiPartFilter.java:150)
+	at org.apache.camel.component.jetty.CamelFilterWrapper.doFilter(CamelFilterWrapper.java:43)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.lang.Thread.run(Unknown Source)
+2019-06-11 08:51:23,701 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 20492 (C:\Dev\git-prjs\projeto-base\target\classes started by thernans in C:\Dev\git-prjs\projeto-base)
+2019-06-11 08:51:23,703 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-06-11 08:51:23,704 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-06-11 08:51:24,636 INFO com.camel.code.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-06-11 08:51:25,480 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8082/minha-primeira-rota
+2019-06-11 08:51:25,526 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8083/msg-to-rest
+2019-06-11 08:51:25,534 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8084/rota84
+2019-06-11 08:51:25,542 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8087/integrar-api-funcionarios
+2019-06-11 08:51:25,550 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8088/predicate-teste
+2019-06-11 08:51:25,559 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8089/predicate-teste
+2019-06-11 08:51:25,568 INFO com.camel.code.util.UtilApp [main] *********** Sucesso - contexto do Camel executando...
+2019-06-11 08:51:25,888 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 2.436 seconds (JVM running for 3.308)
+2019-06-11 08:51:33,049 INFO com.camel.code.controller.FuncionarioController [http-nio-8080-exec-1] ********** todosFuncionarios - Controller - call - Todos Funcionários
+2019-06-11 08:51:33,127 ERROR org.apache.camel.spi.CamelLogger [qtp1579823168-97] Failed delivery for (MessageId: ID-UDI-8KPZFV2-1560253892928-0-3 on ExchangeId: ID-UDI-8KPZFV2-1560253892928-0-1). Exhausted after delivery attempt: 1 caught: java.lang.ClassCastException: org.apache.camel.converter.stream.CachedOutputStream$WrappedInputStream cannot be cast to java.util.List
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route8            ] [route8            ] [jetty:http://localhost:8089/predicate-teste                                   ] [       196]
+[route8            ] [to7               ] [direct:httpfuncionario3                                                       ] [         0]
+[route9            ] [bean1             ] [bean[com.camel.code.bean.GerarObjetoBean]                                     ] [         2]
+[route9            ] [convertBodyTo4    ] [convertBodyTo[java.lang.String]                                               ] [         0]
+[route9            ] [to8               ] [http4://localhost:8080/api/funcionarios/todos?bridgeEndpoint=true             ] [       184]
+[route9            ] [process10         ] [Processor@0x6820805                                                           ] [         0]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+java.lang.ClassCastException: org.apache.camel.converter.stream.CachedOutputStream$WrappedInputStream cannot be cast to java.util.List
+	at com.camel.code.route.R05Bean$1.process(R05Bean.java:36)
+	at org.apache.camel.support.processor.DelegateSyncProcessor.process(DelegateSyncProcessor.java:63)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$RedeliveryState.run(RedeliveryErrorHandler.java:481)
+	at org.apache.camel.support.ReactiveHelper$Worker.schedule(ReactiveHelper.java:130)
+	at org.apache.camel.support.ReactiveHelper.scheduleMain(ReactiveHelper.java:35)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:158)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:223)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:223)
+	at org.apache.camel.component.jetty.CamelContinuationServlet.doService(CamelContinuationServlet.java:218)
+	at org.apache.camel.http.common.CamelServlet.service(CamelServlet.java:79)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1623)
+	at org.eclipse.jetty.servlets.MultiPartFilter.doFilter(MultiPartFilter.java:150)
+	at org.apache.camel.component.jetty.CamelFilterWrapper.doFilter(CamelFilterWrapper.java:43)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.lang.Thread.run(Unknown Source)
+2019-06-11 08:53:36,182 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 25032 (C:\Dev\git-prjs\projeto-base\target\classes started by thernans in C:\Dev\git-prjs\projeto-base)
+2019-06-11 08:53:36,184 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-06-11 08:53:36,184 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-06-11 08:53:37,095 INFO com.camel.code.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-06-11 08:53:37,939 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8082/minha-primeira-rota
+2019-06-11 08:53:37,985 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8083/msg-to-rest
+2019-06-11 08:53:37,993 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8084/rota84
+2019-06-11 08:53:38,002 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8087/integrar-api-funcionarios
+2019-06-11 08:53:38,010 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8088/predicate-teste
+2019-06-11 08:53:38,018 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8089/predicate-teste
+2019-06-11 08:53:38,027 INFO com.camel.code.util.UtilApp [main] *********** Sucesso - contexto do Camel executando...
+2019-06-11 08:53:38,341 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 2.396 seconds (JVM running for 3.301)
+2019-06-11 08:53:47,936 INFO com.camel.code.controller.FuncionarioController [http-nio-8080-exec-1] ********** todosFuncionarios - Controller - call - Todos Funcionários
+2019-06-11 08:53:48,011 ERROR org.apache.camel.spi.CamelLogger [qtp551797833-95] Failed delivery for (MessageId: ID-UDI-8KPZFV2-1560254027821-0-3 on ExchangeId: ID-UDI-8KPZFV2-1560254027821-0-1). Exhausted after delivery attempt: 1 caught: java.lang.ClassCastException: org.apache.camel.converter.stream.CachedOutputStream$WrappedInputStream cannot be cast to java.util.List
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route8            ] [route8            ] [jetty:http://localhost:8089/predicate-teste                                   ] [       187]
+[route8            ] [to7               ] [direct:httpfuncionario3                                                       ] [         0]
+[route9            ] [bean1             ] [bean[com.camel.code.bean.GerarObjetoBean]                                     ] [         2]
+[route9            ] [convertBodyTo4    ] [convertBodyTo[java.lang.String]                                               ] [         0]
+[route9            ] [to8               ] [http4://localhost:8080/api/funcionarios/todos?bridgeEndpoint=true             ] [       176]
+[route9            ] [process10         ] [Processor@0xefbc44a                                                           ] [         0]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+java.lang.ClassCastException: org.apache.camel.converter.stream.CachedOutputStream$WrappedInputStream cannot be cast to java.util.List
+	at com.camel.code.route.R05Bean$1.process(R05Bean.java:34)
+	at org.apache.camel.support.processor.DelegateSyncProcessor.process(DelegateSyncProcessor.java:63)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$RedeliveryState.run(RedeliveryErrorHandler.java:481)
+	at org.apache.camel.support.ReactiveHelper$Worker.schedule(ReactiveHelper.java:130)
+	at org.apache.camel.support.ReactiveHelper.scheduleMain(ReactiveHelper.java:35)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:158)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:223)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:223)
+	at org.apache.camel.component.jetty.CamelContinuationServlet.doService(CamelContinuationServlet.java:218)
+	at org.apache.camel.http.common.CamelServlet.service(CamelServlet.java:79)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1623)
+	at org.eclipse.jetty.servlets.MultiPartFilter.doFilter(MultiPartFilter.java:150)
+	at org.apache.camel.component.jetty.CamelFilterWrapper.doFilter(CamelFilterWrapper.java:43)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.lang.Thread.run(Unknown Source)
+2019-06-11 08:55:01,593 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 10284 (C:\Dev\git-prjs\projeto-base\target\classes started by thernans in C:\Dev\git-prjs\projeto-base)
+2019-06-11 08:55:01,595 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-06-11 08:55:01,595 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-06-11 08:55:02,511 INFO com.camel.code.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-06-11 08:55:03,349 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8082/minha-primeira-rota
+2019-06-11 08:55:03,394 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8083/msg-to-rest
+2019-06-11 08:55:03,401 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8084/rota84
+2019-06-11 08:55:03,409 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8087/integrar-api-funcionarios
+2019-06-11 08:55:03,418 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8088/predicate-teste
+2019-06-11 08:55:03,426 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8089/predicate-teste
+2019-06-11 08:55:03,434 INFO com.camel.code.util.UtilApp [main] *********** Sucesso - contexto do Camel executando...
+2019-06-11 08:55:03,752 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 2.4 seconds (JVM running for 3.247)
+2019-06-11 08:55:10,195 INFO com.camel.code.controller.FuncionarioController [http-nio-8080-exec-1] ********** todosFuncionarios - Controller - call - Todos Funcionários
+2019-06-11 08:55:10,264 INFO com.camel.code.route.R05Bean$1 [qtp573242471-95] [{"codigo":221,"nome":"Nelson da Silva","salario":6800.0},{"codigo":432,"nome":"Débora Vieira","salario":9000.0},{"codigo":510,"nome":"Gilson Antunes Braga","salario":7800.0},{"codigo":788,"nome":"Cleusa Dias Duarte","salario":6000.0},{"codigo":105,"nome":"Marcelo Kiven Straus","salario":8100.0}]
+2019-06-11 09:02:27,218 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 38748 (C:\Dev\git-prjs\projeto-base\target\classes started by thernans in C:\Dev\git-prjs\projeto-base)
+2019-06-11 09:02:27,220 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-06-11 09:02:27,221 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-06-11 09:02:28,160 INFO com.camel.code.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-06-11 09:02:29,199 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8082/minha-primeira-rota
+2019-06-11 09:02:29,247 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8083/msg-to-rest
+2019-06-11 09:02:29,255 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8084/rota84
+2019-06-11 09:02:29,263 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8087/integrar-api-funcionarios
+2019-06-11 09:02:29,272 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8088/predicate-teste
+2019-06-11 09:02:29,280 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8089/predicate-teste
+2019-06-11 09:02:29,288 INFO com.camel.code.util.UtilApp [main] *********** Sucesso - contexto do Camel executando...
+2019-06-11 09:02:29,612 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 2.642 seconds (JVM running for 3.505)
+2019-06-11 09:02:32,245 INFO com.camel.code.controller.FuncionarioController [http-nio-8080-exec-1] ********** todosFuncionarios - Controller - call - Todos Funcionários
+2019-06-11 09:03:17,460 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 33440 (C:\Dev\git-prjs\projeto-base\target\classes started by thernans in C:\Dev\git-prjs\projeto-base)
+2019-06-11 09:03:17,462 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-06-11 09:03:17,463 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-06-11 09:03:18,382 INFO com.camel.code.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-06-11 09:03:19,258 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8082/minha-primeira-rota
+2019-06-11 09:03:19,302 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8083/msg-to-rest
+2019-06-11 09:03:19,310 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8084/rota84
+2019-06-11 09:03:19,318 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8087/integrar-api-funcionarios
+2019-06-11 09:03:19,326 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8088/predicate-teste
+2019-06-11 09:03:19,334 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8089/predicate-teste
+2019-06-11 09:03:19,342 INFO com.camel.code.util.UtilApp [main] *********** Sucesso - contexto do Camel executando...
+2019-06-11 09:03:19,649 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 2.441 seconds (JVM running for 3.304)
+2019-06-11 09:03:30,018 INFO com.camel.code.controller.FuncionarioController [http-nio-8080-exec-1] ********** todosFuncionarios - Controller - call - Todos Funcionários
+2019-06-11 09:06:05,373 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 14840 (C:\Dev\git-prjs\projeto-base\target\classes started by thernans in C:\Dev\git-prjs\projeto-base)
+2019-06-11 09:06:05,375 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-06-11 09:06:05,376 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-06-11 09:06:06,316 INFO com.camel.code.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-06-11 09:06:07,184 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8082/minha-primeira-rota
+2019-06-11 09:06:07,229 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8083/msg-to-rest
+2019-06-11 09:06:07,237 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8084/rota84
+2019-06-11 09:06:07,245 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8087/integrar-api-funcionarios
+2019-06-11 09:06:07,254 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8088/predicate-teste
+2019-06-11 09:06:07,262 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8089/predicate-teste
+2019-06-11 09:06:07,271 INFO com.camel.code.util.UtilApp [main] *********** Sucesso - contexto do Camel executando...
+2019-06-11 09:06:07,591 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 2.476 seconds (JVM running for 3.339)
+2019-06-11 09:06:37,877 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 22928 (C:\Dev\git-prjs\projeto-base\target\classes started by thernans in C:\Dev\git-prjs\projeto-base)
+2019-06-11 09:06:37,879 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-06-11 09:06:37,880 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-06-11 09:06:38,837 INFO com.camel.code.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-06-11 09:06:39,734 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8082/minha-primeira-rota
+2019-06-11 09:06:39,783 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8083/msg-to-rest
+2019-06-11 09:06:39,792 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8084/rota84
+2019-06-11 09:06:39,800 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8087/integrar-api-funcionarios
+2019-06-11 09:06:39,809 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8088/predicate-teste
+2019-06-11 09:06:39,817 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8089/predicate-teste
+2019-06-11 09:06:39,827 INFO com.camel.code.util.UtilApp [main] *********** Sucesso - contexto do Camel executando...
+2019-06-11 09:06:40,143 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 2.51 seconds (JVM running for 3.36)
+2019-06-11 09:06:46,050 INFO com.camel.code.controller.FuncionarioController [http-nio-8080-exec-1] ********** todosFuncionarios - Controller - call - Todos Funcionários
