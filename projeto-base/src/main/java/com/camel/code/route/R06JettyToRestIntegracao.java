@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 import com.camel.code.util.UtilApp;
 
 @Component
-public class R06JettyToRest extends RouteBuilder {
+public class R06JettyToRestIntegracao extends RouteBuilder {
 
 	private final String rotaIntegracao = "jetty://http://localhost:9999/integracao";
 	private final String rotaRestFuncionarios = "http4://localhost:8080/api/funcionarios/todos?bridgeEndpoint=true";
