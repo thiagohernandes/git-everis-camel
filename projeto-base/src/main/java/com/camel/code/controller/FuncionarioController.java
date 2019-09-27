@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -24,7 +25,13 @@ public class FuncionarioController {
 	
 	@GetMapping("/todos")
 	public List<Funcionario> todosFuncionarios() {
-		logger.info("********** {}", "todosFuncionarios - Controller - call - Todos Funcionários");
+		logger.info("********** {}", "todosFuncionarios get - Controller - call - Todos Funcionários");
+		return service.listaFuncionarios();
+	}
+	
+	@PostMapping("/todos-post")
+	public List<Funcionario> todosFuncionariosPost() {
+		logger.info("********** {}", "todosFuncionarios post - Controller - call - Todos Funcionários");
 		return service.listaFuncionarios();
 	}
 	

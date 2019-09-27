@@ -15,8 +15,8 @@ public class RestPessoaRoute extends RouteBuilder{
 
 	private final String localhost8081 = "jetty://http://localhost:8081/json-to-xml";
 	private final String localhost8083 = "jetty://http://localhost:8083/xml-to-json";
-	private final String localhost8080XML = "jetty://http://localhost:8080/api/xml";
-	private final String localhost8080JSON = "jetty://http://localhost:8080/api/json";
+	private final String localhost8000XML = "jetty://http://localhost:8000/api/xml";
+	private final String localhost8000JSON = "jetty://http://localhost:8000/api/json";
 	
 	@Override
 	public void configure() throws Exception {
@@ -24,7 +24,7 @@ public class RestPessoaRoute extends RouteBuilder{
 	 // JSON TO XML -------------------------------------------------------------------
 	    
 	    from(localhost8081)
-		.to(localhost8080JSON+"?bridgeEndpoint=true")
+		.to(localhost8000JSON+"?bridgeEndpoint=true")
 		.convertBodyTo(String.class)
 		.log(" LOG 1 ---------> ${body}")
 			.doTry()
@@ -40,7 +40,7 @@ public class RestPessoaRoute extends RouteBuilder{
 	// XML TO JSON -------------------------------------------------------------------
 	    
 		from(localhost8083)        
-		.to(localhost8080XML+"?bridgeEndpoint=true")
+		.to(localhost8000XML+"?bridgeEndpoint=true")
 		.convertBodyTo(String.class)
 			.doTry()
 			.process(new PessoaProcessorXmlToJson())

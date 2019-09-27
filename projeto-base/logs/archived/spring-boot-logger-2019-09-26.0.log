@@ -1,0 +1,649 @@
+2019-09-26 09:14:49,344 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 34440 (C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base\target\classes started by thernans in C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base)
+2019-09-26 09:14:49,352 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-09-26 09:14:49,352 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-09-26 09:14:50,579 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 1.562 seconds (JVM running for 2.867)
+2019-09-26 09:14:55,671 INFO com.camel.code.controller.FuncionarioController [http-nio-8080-exec-1] ********** todosFuncionarios - Controller - call - Todos Funcionários
+2019-09-26 09:50:20,093 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 28068 (C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base\target\classes started by thernans in C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base)
+2019-09-26 09:50:20,095 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-09-26 09:50:20,096 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-09-26 09:50:21,310 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 1.446 seconds (JVM running for 2.394)
+2019-09-26 09:51:59,455 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 32828 (C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base\target\classes started by thernans in C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base)
+2019-09-26 09:51:59,457 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-09-26 09:51:59,458 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-09-26 09:52:00,663 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 1.435 seconds (JVM running for 2.365)
+2019-09-26 09:52:39,554 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 39724 (C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base\target\classes started by thernans in C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base)
+2019-09-26 09:52:39,557 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-09-26 09:52:39,558 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-09-26 09:52:40,511 INFO com.camel.code.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-09-26 09:52:41,365 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:7777/integracao
+2019-09-26 09:52:41,424 INFO com.camel.code.util.UtilApp [main] *********** Sucesso - contexto do Camel executando... ***********
+2019-09-26 09:52:41,715 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 2.392 seconds (JVM running for 3.379)
+2019-09-26 09:52:45,872 INFO com.camel.code.route.R07JettyToRestIntegracao$1 [qtp109175108-38] ---> Log rotaIntegracao
+2019-09-26 09:52:45,988 INFO com.camel.code.controller.FuncionarioController [http-nio-8080-exec-1] ********** todosFuncionarios - Controller - call - Todos Funcionários
+2019-09-26 09:52:46,098 INFO com.camel.code.route.R07JettyToRestIntegracao$2 [qtp109175108-38] ---> Log rotaRestFuncionarios
+2019-09-26 09:52:46,099 INFO com.camel.code.route.R07JettyToRestIntegracao$2 [qtp109175108-38] ---> Data [{codigo=221, nome=Nelson da Silva, salario=6800.0}, {codigo=432, nome=Débora Vieira, salario=9000.0}, {codigo=510, nome=Gilson Antunes Braga, salario=7800.0}, {codigo=788, nome=Cleusa Dias Duarte, salario=6000.0}, {codigo=105, nome=Marcelo Kiven Straus, salario=8100.0}]
+2019-09-26 09:52:46,105 ERROR org.apache.camel.spi.CamelLogger [qtp109175108-38] Failed delivery for (MessageId: ID-UDI-8KPZFV2-1569502365864-0-2 on ExchangeId: ID-UDI-8KPZFV2-1569502365864-0-1). Exhausted after delivery attempt: 1 caught: org.apache.camel.InvalidPayloadException: No body available of type: java.io.InputStream but has value: [{codigo=221, nome=Nelson da Silva, salario=6800.0}, {codigo=432, nome=Débora Vieira, salario=9000.0}, {codigo=510, nome=Gilson Antunes Braga, salario=7800.0}, {codigo=788, nome=Cleusa Dias Duarte, salario=6000.0}, {codigo=105, nome=Marcelo Kiven Straus, salario=8100.0}] of type: java.util.ArrayList on: HttpMessage@0x6ba042b5. Caused by: No type converter available to convert from type: java.util.ArrayList to the required type: java.io.InputStream with value [{codigo=221, nome=Nelson da Silva, salario=6800.0}, {codigo=432, nome=Débora Vieira, salario=9000.0}, {codigo=510, nome=Gilson Antunes Braga, salario=7800.0}, {codigo=788, nome=Cleusa Dias Duarte, salario=6000.0}, {codigo=105, nome=Marcelo Kiven Straus, salario=8100.0}]. Exchange[ID-UDI-8KPZFV2-1569502365864-0-1]. Caused by: [org.apache.camel.NoTypeConversionAvailableException - No type converter available to convert from type: java.util.ArrayList to the required type: java.io.InputStream with value [{codigo=221, nome=Nelson da Silva, salario=6800.0}, {codigo=432, nome=Débora Vieira, salario=9000.0}, {codigo=510, nome=Gilson Antunes Braga, salario=7800.0}, {codigo=788, nome=Cleusa Dias Duarte, salario=6000.0}, {codigo=105, nome=Marcelo Kiven Straus, salario=8100.0}]]
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route1            ] [route1            ] [jetty:http://localhost:7777/integracao                                        ] [       238]
+[route1            ] [process1          ] [Processor@0xaa8cb77                                                           ] [         3]
+[route1            ] [to1               ] [http4://localhost:8080/api/funcionarios/todos?bridgeEndpoint=true             ] [       201]
+[route1            ] [unmarshal1        ] [unmarshal[org.apache.camel.model.dataformat.JsonDataFormat@15e04f45]          ] [        22]
+[route1            ] [process2          ] [Processor@0x1786f112                                                          ] [         1]
+[route1            ] [to2               ] [http4://localhost:8099/api/times/todos?bridgeEndpoint=true                    ] [         0]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+org.apache.camel.InvalidPayloadException: No body available of type: java.io.InputStream but has value: [{codigo=221, nome=Nelson da Silva, salario=6800.0}, {codigo=432, nome=Débora Vieira, salario=9000.0}, {codigo=510, nome=Gilson Antunes Braga, salario=7800.0}, {codigo=788, nome=Cleusa Dias Duarte, salario=6000.0}, {codigo=105, nome=Marcelo Kiven Straus, salario=8100.0}] of type: java.util.ArrayList on: HttpMessage@0x6ba042b5. Caused by: No type converter available to convert from type: java.util.ArrayList to the required type: java.io.InputStream with value [{codigo=221, nome=Nelson da Silva, salario=6800.0}, {codigo=432, nome=Débora Vieira, salario=9000.0}, {codigo=510, nome=Gilson Antunes Braga, salario=7800.0}, {codigo=788, nome=Cleusa Dias Duarte, salario=6000.0}, {codigo=105, nome=Marcelo Kiven Straus, salario=8100.0}]. Exchange[ID-UDI-8KPZFV2-1569502365864-0-1]. Caused by: [org.apache.camel.NoTypeConversionAvailableException - No type converter available to convert from type: java.util.ArrayList to the required type: java.io.InputStream with value [{codigo=221, nome=Nelson da Silva, salario=6800.0}, {codigo=432, nome=Débora Vieira, salario=9000.0}, {codigo=510, nome=Gilson Antunes Braga, salario=7800.0}, {codigo=788, nome=Cleusa Dias Duarte, salario=6000.0}, {codigo=105, nome=Marcelo Kiven Straus, salario=8100.0}]]
+	at org.apache.camel.support.MessageSupport.getMandatoryBody(MessageSupport.java:115)
+	at org.apache.camel.component.http4.HttpProducer.createRequestEntity(HttpProducer.java:554)
+	at org.apache.camel.component.http4.HttpProducer.createMethod(HttpProducer.java:450)
+	at org.apache.camel.component.http4.HttpProducer.process(HttpProducer.java:110)
+	at org.apache.camel.support.AsyncProcessorConverterHelper$ProcessorToAsyncProcessorBridge.process(AsyncProcessorConverterHelper.java:66)
+	at org.apache.camel.processor.SendProcessor.process(SendProcessor.java:130)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$RedeliveryState.run(RedeliveryErrorHandler.java:481)
+	at org.apache.camel.support.ReactiveHelper$Worker.schedule(ReactiveHelper.java:130)
+	at org.apache.camel.support.ReactiveHelper.scheduleMain(ReactiveHelper.java:43)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:88)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:223)
+	at org.apache.camel.component.jetty.CamelContinuationServlet.doService(CamelContinuationServlet.java:218)
+	at org.apache.camel.http.common.CamelServlet.service(CamelServlet.java:79)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1623)
+	at org.eclipse.jetty.servlets.MultiPartFilter.doFilter(MultiPartFilter.java:150)
+	at org.apache.camel.component.jetty.CamelFilterWrapper.doFilter(CamelFilterWrapper.java:43)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.camel.NoTypeConversionAvailableException: No type converter available to convert from type: java.util.ArrayList to the required type: java.io.InputStream with value [{codigo=221, nome=Nelson da Silva, salario=6800.0}, {codigo=432, nome=Débora Vieira, salario=9000.0}, {codigo=510, nome=Gilson Antunes Braga, salario=7800.0}, {codigo=788, nome=Cleusa Dias Duarte, salario=6000.0}, {codigo=105, nome=Marcelo Kiven Straus, salario=8100.0}]
+	at org.apache.camel.impl.converter.BaseTypeConverterRegistry.mandatoryConvertTo(BaseTypeConverterRegistry.java:139)
+	at org.apache.camel.support.MessageSupport.getMandatoryBody(MessageSupport.java:113)
+	... 36 common frames omitted
+2019-09-26 09:54:47,919 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 11808 (C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base\target\classes started by thernans in C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base)
+2019-09-26 09:54:47,921 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-09-26 09:54:47,921 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-09-26 09:54:48,782 INFO com.camel.code.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-09-26 09:54:49,606 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:7777/integracao
+2019-09-26 09:54:49,663 INFO com.camel.code.util.UtilApp [main] *********** Sucesso - contexto do Camel executando... ***********
+2019-09-26 09:54:49,968 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 2.278 seconds (JVM running for 3.182)
+2019-09-26 09:55:02,634 INFO com.camel.code.route.R07JettyToRestIntegracao$1 [qtp2007149130-37] ---> Log rotaIntegracao
+2019-09-26 09:55:02,744 INFO com.camel.code.controller.FuncionarioController [http-nio-8080-exec-1] ********** todosFuncionarios - Controller - call - Todos Funcionários
+2019-09-26 09:55:02,841 ERROR org.apache.camel.spi.CamelLogger [qtp2007149130-37] Failed delivery for (MessageId: ID-UDI-8KPZFV2-1569502502627-0-2 on ExchangeId: ID-UDI-8KPZFV2-1569502502627-0-1). Exhausted after delivery attempt: 1 caught: com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `com.camel.code.domain.Funcionario` out of START_ARRAY token
+ at [Source: (org.apache.camel.converter.stream.CachedOutputStream$WrappedInputStream); line: 1, column: 1]
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route1            ] [route1            ] [jetty:http://localhost:7777/integracao                                        ] [       210]
+[route1            ] [process1          ] [Processor@0x8a436c5                                                           ] [         3]
+[route1            ] [to1               ] [http4://localhost:8080/api/funcionarios/todos?bridgeEndpoint=true             ] [       176]
+[route1            ] [unmarshal1        ] [unmarshal[org.apache.camel.model.dataformat.JsonDataFormat@72bcc57a]          ] [         0]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `com.camel.code.domain.Funcionario` out of START_ARRAY token
+ at [Source: (org.apache.camel.converter.stream.CachedOutputStream$WrappedInputStream); line: 1, column: 1]
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:63)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1343)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1139)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1093)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromArray(BeanDeserializerBase.java:1461)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeOther(BeanDeserializer.java:185)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:161)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4013)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3070)
+	at org.apache.camel.component.jackson.JacksonDataFormat.unmarshal(JacksonDataFormat.java:192)
+	at org.apache.camel.support.processor.UnmarshalProcessor.process(UnmarshalProcessor.java:61)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$RedeliveryState.run(RedeliveryErrorHandler.java:481)
+	at org.apache.camel.support.ReactiveHelper$Worker.schedule(ReactiveHelper.java:130)
+	at org.apache.camel.support.ReactiveHelper.scheduleMain(ReactiveHelper.java:43)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:88)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:223)
+	at org.apache.camel.component.jetty.CamelContinuationServlet.doService(CamelContinuationServlet.java:218)
+	at org.apache.camel.http.common.CamelServlet.service(CamelServlet.java:79)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1623)
+	at org.eclipse.jetty.servlets.MultiPartFilter.doFilter(MultiPartFilter.java:150)
+	at org.apache.camel.component.jetty.CamelFilterWrapper.doFilter(CamelFilterWrapper.java:43)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.lang.Thread.run(Unknown Source)
+2019-09-26 09:55:48,524 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 34188 (C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base\target\classes started by thernans in C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base)
+2019-09-26 09:55:48,526 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-09-26 09:55:48,526 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-09-26 09:55:49,427 INFO com.camel.code.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-09-26 09:55:50,245 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:7777/integracao
+2019-09-26 09:55:50,301 INFO com.camel.code.util.UtilApp [main] *********** Sucesso - contexto do Camel executando... ***********
+2019-09-26 09:55:50,583 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 2.286 seconds (JVM running for 3.215)
+2019-09-26 09:55:54,925 INFO com.camel.code.route.R07JettyToRestIntegracao$1 [qtp1349373781-38] ---> Log rotaIntegracao
+2019-09-26 09:55:55,027 INFO com.camel.code.controller.FuncionarioController [http-nio-8080-exec-1] ********** todosFuncionarios - Controller - call - Todos Funcionários
+2019-09-26 09:55:55,101 ERROR org.apache.camel.spi.CamelLogger [qtp1349373781-38] Failed delivery for (MessageId: ID-UDI-8KPZFV2-1569502554917-0-2 on ExchangeId: ID-UDI-8KPZFV2-1569502554917-0-1). Exhausted after delivery attempt: 1 caught: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No serializer found for class org.apache.camel.converter.stream.CachedOutputStream$WrappedInputStream and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS)
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route1            ] [route1            ] [jetty:http://localhost:7777/integracao                                        ] [       181]
+[route1            ] [process1          ] [Processor@0x33854f29                                                          ] [         3]
+[route1            ] [to1               ] [http4://localhost:8080/api/funcionarios/todos?bridgeEndpoint=true             ] [       169]
+[route1            ] [marshal1          ] [marshal[org.apache.camel.model.dataformat.JsonDataFormat@2ab403ee]            ] [         0]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No serializer found for class org.apache.camel.converter.stream.CachedOutputStream$WrappedInputStream and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS)
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:77)
+	at com.fasterxml.jackson.databind.SerializerProvider.reportBadDefinition(SerializerProvider.java:1191)
+	at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:313)
+	at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.failForEmpty(UnknownSerializer.java:71)
+	at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.serialize(UnknownSerializer.java:33)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:480)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:319)
+	at com.fasterxml.jackson.databind.ObjectWriter$Prefetch.serialize(ObjectWriter.java:1396)
+	at com.fasterxml.jackson.databind.ObjectWriter._configAndWriteValue(ObjectWriter.java:1120)
+	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:950)
+	at org.apache.camel.component.jackson.JacksonDataFormat.marshal(JacksonDataFormat.java:163)
+	at org.apache.camel.support.processor.MarshalProcessor.process(MarshalProcessor.java:61)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$RedeliveryState.run(RedeliveryErrorHandler.java:481)
+	at org.apache.camel.support.ReactiveHelper$Worker.schedule(ReactiveHelper.java:130)
+	at org.apache.camel.support.ReactiveHelper.scheduleMain(ReactiveHelper.java:43)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:88)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:223)
+	at org.apache.camel.component.jetty.CamelContinuationServlet.doService(CamelContinuationServlet.java:218)
+	at org.apache.camel.http.common.CamelServlet.service(CamelServlet.java:79)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1623)
+	at org.eclipse.jetty.servlets.MultiPartFilter.doFilter(MultiPartFilter.java:150)
+	at org.apache.camel.component.jetty.CamelFilterWrapper.doFilter(CamelFilterWrapper.java:43)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.lang.Thread.run(Unknown Source)
+2019-09-26 10:22:51,443 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 38364 (C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base\target\classes started by thernans in C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base)
+2019-09-26 10:22:51,453 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-09-26 10:22:51,457 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-09-26 10:22:53,818 INFO com.camel.code.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-09-26 10:22:54,344 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:7777/integracao
+2019-09-26 10:22:54,411 INFO com.camel.code.util.UtilApp [main] *********** Sucesso - contexto do Camel executando... ***********
+2019-09-26 10:22:54,799 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 3.888 seconds (JVM running for 4.928)
+2019-09-26 10:32:42,552 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 36300 (C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base\target\classes started by thernans in C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base)
+2019-09-26 10:32:42,554 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-09-26 10:32:42,554 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-09-26 10:32:43,429 INFO com.camel.code.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-09-26 10:32:44,218 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:7777/integracao
+2019-09-26 10:32:44,274 INFO com.camel.code.util.UtilApp [main] *********** Sucesso - contexto do Camel executando... ***********
+2019-09-26 10:32:44,545 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 2.227 seconds (JVM running for 3.135)
+2019-09-26 10:32:51,368 INFO com.camel.code.route.R07JettyToRestIntegracao$1 [qtp1010983633-36] ---> Log rotaIntegracao
+2019-09-26 10:32:51,466 INFO com.camel.code.controller.FuncionarioController [http-nio-8080-exec-1] ********** todosFuncionarios - Controller - call - Todos Funcionários
+2019-09-26 10:32:51,537 ERROR org.apache.camel.spi.CamelLogger [qtp1010983633-36] Failed delivery for (MessageId: ID-UDI-8KPZFV2-1569504771359-0-2 on ExchangeId: ID-UDI-8KPZFV2-1569504771359-0-1). Exhausted after delivery attempt: 1 caught: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No serializer found for class org.apache.camel.converter.stream.CachedOutputStream$WrappedInputStream and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS)
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route1            ] [route1            ] [jetty:http://localhost:7777/integracao                                        ] [       175]
+[route1            ] [process1          ] [Processor@0x59b76fe9                                                          ] [         4]
+[route1            ] [to1               ] [http4://localhost:8080/api/funcionarios/todos?bridgeEndpoint=true             ] [       161]
+[route1            ] [marshal1          ] [marshal[org.apache.camel.model.dataformat.JsonDataFormat@1e6baf62]            ] [         0]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No serializer found for class org.apache.camel.converter.stream.CachedOutputStream$WrappedInputStream and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS)
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:77)
+	at com.fasterxml.jackson.databind.SerializerProvider.reportBadDefinition(SerializerProvider.java:1191)
+	at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:313)
+	at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.failForEmpty(UnknownSerializer.java:71)
+	at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.serialize(UnknownSerializer.java:33)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:480)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:319)
+	at com.fasterxml.jackson.databind.ObjectWriter$Prefetch.serialize(ObjectWriter.java:1396)
+	at com.fasterxml.jackson.databind.ObjectWriter._configAndWriteValue(ObjectWriter.java:1120)
+	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:950)
+	at org.apache.camel.component.jackson.JacksonDataFormat.marshal(JacksonDataFormat.java:163)
+	at org.apache.camel.support.processor.MarshalProcessor.process(MarshalProcessor.java:61)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$RedeliveryState.run(RedeliveryErrorHandler.java:481)
+	at org.apache.camel.support.ReactiveHelper$Worker.schedule(ReactiveHelper.java:130)
+	at org.apache.camel.support.ReactiveHelper.scheduleMain(ReactiveHelper.java:43)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:88)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:223)
+	at org.apache.camel.component.jetty.CamelContinuationServlet.doService(CamelContinuationServlet.java:218)
+	at org.apache.camel.http.common.CamelServlet.service(CamelServlet.java:79)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1623)
+	at org.eclipse.jetty.servlets.MultiPartFilter.doFilter(MultiPartFilter.java:150)
+	at org.apache.camel.component.jetty.CamelFilterWrapper.doFilter(CamelFilterWrapper.java:43)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.lang.Thread.run(Unknown Source)
+2019-09-26 10:33:56,576 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 26328 (C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base\target\classes started by thernans in C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base)
+2019-09-26 10:33:56,579 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-09-26 10:33:56,580 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-09-26 10:33:57,753 INFO com.camel.code.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-09-26 10:33:58,552 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:7777/integracao
+2019-09-26 10:33:58,614 INFO com.camel.code.util.UtilApp [main] *********** Sucesso - contexto do Camel executando... ***********
+2019-09-26 10:33:58,956 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 2.713 seconds (JVM running for 3.845)
+2019-09-26 10:34:02,802 INFO com.camel.code.route.R07JettyToRestIntegracao$1 [qtp2052452680-38] ---> Log rotaIntegracao
+2019-09-26 10:34:02,898 INFO com.camel.code.controller.FuncionarioController [http-nio-8080-exec-1] ********** todosFuncionarios - Controller - call - Todos Funcionários
+2019-09-26 10:34:02,979 ERROR org.apache.camel.spi.CamelLogger [qtp2052452680-38] Failed delivery for (MessageId: ID-UDI-8KPZFV2-1569504842795-0-2 on ExchangeId: ID-UDI-8KPZFV2-1569504842795-0-1). Exhausted after delivery attempt: 1 caught: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No serializer found for class org.apache.camel.converter.stream.CachedOutputStream$WrappedInputStream and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS)
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route1            ] [route1            ] [jetty:http://localhost:7777/integracao                                        ] [       181]
+[route1            ] [process1          ] [Processor@0x5caa3c5f                                                          ] [         3]
+[route1            ] [to1               ] [http4://localhost:8080/api/funcionarios/todos?bridgeEndpoint=true             ] [       170]
+[route1            ] [marshal1          ] [marshal[org.apache.camel.model.dataformat.JsonDataFormat@5c41682d]            ] [         0]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No serializer found for class org.apache.camel.converter.stream.CachedOutputStream$WrappedInputStream and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS)
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:77)
+	at com.fasterxml.jackson.databind.SerializerProvider.reportBadDefinition(SerializerProvider.java:1191)
+	at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:313)
+	at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.failForEmpty(UnknownSerializer.java:71)
+	at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.serialize(UnknownSerializer.java:33)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:480)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:319)
+	at com.fasterxml.jackson.databind.ObjectWriter$Prefetch.serialize(ObjectWriter.java:1396)
+	at com.fasterxml.jackson.databind.ObjectWriter._configAndWriteValue(ObjectWriter.java:1120)
+	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:950)
+	at org.apache.camel.component.jackson.JacksonDataFormat.marshal(JacksonDataFormat.java:163)
+	at org.apache.camel.support.processor.MarshalProcessor.process(MarshalProcessor.java:61)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$RedeliveryState.run(RedeliveryErrorHandler.java:481)
+	at org.apache.camel.support.ReactiveHelper$Worker.schedule(ReactiveHelper.java:130)
+	at org.apache.camel.support.ReactiveHelper.scheduleMain(ReactiveHelper.java:43)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:88)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:223)
+	at org.apache.camel.component.jetty.CamelContinuationServlet.doService(CamelContinuationServlet.java:218)
+	at org.apache.camel.http.common.CamelServlet.service(CamelServlet.java:79)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1623)
+	at org.eclipse.jetty.servlets.MultiPartFilter.doFilter(MultiPartFilter.java:150)
+	at org.apache.camel.component.jetty.CamelFilterWrapper.doFilter(CamelFilterWrapper.java:43)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.lang.Thread.run(Unknown Source)
+2019-09-26 10:34:06,964 INFO com.camel.code.route.R07JettyToRestIntegracao$1 [qtp2052452680-31] ---> Log rotaIntegracao
+2019-09-26 10:34:06,968 INFO com.camel.code.controller.FuncionarioController [http-nio-8080-exec-2] ********** todosFuncionarios - Controller - call - Todos Funcionários
+2019-09-26 10:34:06,972 ERROR org.apache.camel.spi.CamelLogger [qtp2052452680-31] Failed delivery for (MessageId: ID-UDI-8KPZFV2-1569504842795-0-4 on ExchangeId: ID-UDI-8KPZFV2-1569504842795-0-3). Exhausted after delivery attempt: 1 caught: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No serializer found for class org.apache.camel.converter.stream.CachedOutputStream$WrappedInputStream and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS)
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route1            ] [route1            ] [jetty:http://localhost:7777/integracao                                        ] [         8]
+[route1            ] [process1          ] [Processor@0x5caa3c5f                                                          ] [         0]
+[route1            ] [to1               ] [http4://localhost:8080/api/funcionarios/todos?bridgeEndpoint=true             ] [         7]
+[route1            ] [marshal1          ] [marshal[org.apache.camel.model.dataformat.JsonDataFormat@5c41682d]            ] [         0]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No serializer found for class org.apache.camel.converter.stream.CachedOutputStream$WrappedInputStream and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS)
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:77)
+	at com.fasterxml.jackson.databind.SerializerProvider.reportBadDefinition(SerializerProvider.java:1191)
+	at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:313)
+	at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.failForEmpty(UnknownSerializer.java:71)
+	at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.serialize(UnknownSerializer.java:33)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:480)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:319)
+	at com.fasterxml.jackson.databind.ObjectWriter$Prefetch.serialize(ObjectWriter.java:1396)
+	at com.fasterxml.jackson.databind.ObjectWriter._configAndWriteValue(ObjectWriter.java:1120)
+	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:950)
+	at org.apache.camel.component.jackson.JacksonDataFormat.marshal(JacksonDataFormat.java:163)
+	at org.apache.camel.support.processor.MarshalProcessor.process(MarshalProcessor.java:61)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$RedeliveryState.run(RedeliveryErrorHandler.java:481)
+	at org.apache.camel.support.ReactiveHelper$Worker.schedule(ReactiveHelper.java:130)
+	at org.apache.camel.support.ReactiveHelper.scheduleMain(ReactiveHelper.java:43)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:88)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:223)
+	at org.apache.camel.component.jetty.CamelContinuationServlet.doService(CamelContinuationServlet.java:218)
+	at org.apache.camel.http.common.CamelServlet.service(CamelServlet.java:79)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1623)
+	at org.eclipse.jetty.servlets.MultiPartFilter.doFilter(MultiPartFilter.java:150)
+	at org.apache.camel.component.jetty.CamelFilterWrapper.doFilter(CamelFilterWrapper.java:43)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:132)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.lang.Thread.run(Unknown Source)
+2019-09-26 10:35:36,397 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 30864 (C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base\target\classes started by thernans in C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base)
+2019-09-26 10:35:36,399 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-09-26 10:35:36,399 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-09-26 10:35:37,327 INFO com.camel.code.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-09-26 10:35:38,116 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:7777/integracao
+2019-09-26 10:35:38,172 INFO com.camel.code.util.UtilApp [main] *********** Sucesso - contexto do Camel executando... ***********
+2019-09-26 10:35:38,449 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 2.312 seconds (JVM running for 3.247)
+2019-09-26 10:35:40,789 INFO com.camel.code.route.R07JettyToRestIntegracao$1 [qtp952288009-38] ---> Log rotaIntegracao
+2019-09-26 10:35:40,885 INFO com.camel.code.controller.FuncionarioController [http-nio-8080-exec-1] ********** todosFuncionarios - Controller - call - Todos Funcionários
+2019-09-26 10:35:40,972 ERROR org.apache.camel.spi.CamelLogger [qtp952288009-38] Failed delivery for (MessageId: ID-UDI-8KPZFV2-1569504940773-0-2 on ExchangeId: ID-UDI-8KPZFV2-1569504940773-0-1). Exhausted after delivery attempt: 1 caught: com.fasterxml.jackson.core.JsonParseException: Unexpected character '[' (code 91) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route1            ] [route1            ] [jetty:http://localhost:7777/integracao                                        ] [       195]
+[route1            ] [process1          ] [Processor@0xc932b31                                                           ] [         4]
+[route1            ] [to1               ] [http4://localhost:8080/api/funcionarios/todos?bridgeEndpoint=true             ] [       162]
+[route1            ] [unmarshal1        ] [unmarshal[org.apache.camel.model.dataformat.JacksonXMLDataFormat@29fa14ec]    ] [         0]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+com.fasterxml.jackson.core.JsonParseException: Unexpected character '[' (code 91) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+	at com.fasterxml.jackson.dataformat.xml.util.StaxUtil.throwAsParseException(StaxUtil.java:37)
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:658)
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:537)
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:29)
+	at com.fasterxml.jackson.core.JsonFactory.createParser(JsonFactory.java:820)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3070)
+	at org.apache.camel.component.jacksonxml.JacksonXMLDataFormat.unmarshal(JacksonXMLDataFormat.java:191)
+	at org.apache.camel.support.processor.UnmarshalProcessor.process(UnmarshalProcessor.java:61)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$RedeliveryState.run(RedeliveryErrorHandler.java:481)
+	at org.apache.camel.support.ReactiveHelper$Worker.schedule(ReactiveHelper.java:130)
+	at org.apache.camel.support.ReactiveHelper.scheduleMain(ReactiveHelper.java:43)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:88)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:223)
+	at org.apache.camel.component.jetty.CamelContinuationServlet.doService(CamelContinuationServlet.java:218)
+	at org.apache.camel.http.common.CamelServlet.service(CamelServlet.java:79)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1623)
+	at org.eclipse.jetty.servlets.MultiPartFilter.doFilter(MultiPartFilter.java:150)
+	at org.apache.camel.component.jetty.CamelFilterWrapper.doFilter(CamelFilterWrapper.java:43)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '[' (code 91) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedChar(StreamScanner.java:653)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2133)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1181)
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:654)
+	... 37 common frames omitted
+2019-09-26 10:39:56,322 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 3112 (C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base\target\classes started by thernans in C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base)
+2019-09-26 10:39:56,324 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-09-26 10:39:56,324 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-09-26 10:39:57,213 INFO com.camel.code.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-09-26 10:39:58,057 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:7777/integracao
+2019-09-26 10:39:58,120 INFO com.camel.code.util.UtilApp [main] *********** Sucesso - contexto do Camel executando... ***********
+2019-09-26 10:39:58,414 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 2.322 seconds (JVM running for 3.313)
+2019-09-26 10:40:02,851 INFO com.camel.code.route.R07JettyToRestIntegracao$1 [qtp2007149130-40] ---> Log rotaIntegracao
+2019-09-26 10:40:02,946 INFO com.camel.code.controller.FuncionarioController [http-nio-8080-exec-1] ********** todosFuncionarios - Controller - call - Todos Funcionários
+2019-09-26 10:40:03,035 ERROR org.apache.camel.spi.CamelLogger [qtp2007149130-40] Failed delivery for (MessageId: ID-UDI-8KPZFV2-1569505202843-0-2 on ExchangeId: ID-UDI-8KPZFV2-1569505202843-0-1). Exhausted after delivery attempt: 1 caught: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No serializer found for class org.apache.camel.converter.stream.CachedOutputStream$WrappedInputStream and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS)
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route1            ] [route1            ] [jetty:http://localhost:7777/integracao                                        ] [       188]
+[route1            ] [process1          ] [Processor@0x49c2c2d7                                                          ] [         3]
+[route1            ] [to1               ] [http4://localhost:8080/api/funcionarios/todos?bridgeEndpoint=true             ] [       166]
+[route1            ] [marshal1          ] [marshal[org.apache.camel.model.DataFormatDefinition@1e214c78]                 ] [         0]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No serializer found for class org.apache.camel.converter.stream.CachedOutputStream$WrappedInputStream and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS)
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:77)
+	at com.fasterxml.jackson.databind.SerializerProvider.reportBadDefinition(SerializerProvider.java:1191)
+	at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:313)
+	at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.failForEmpty(UnknownSerializer.java:71)
+	at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.serialize(UnknownSerializer.java:33)
+	at com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider.serializeValue(XmlSerializerProvider.java:107)
+	at com.fasterxml.jackson.databind.ObjectWriter$Prefetch.serialize(ObjectWriter.java:1396)
+	at com.fasterxml.jackson.databind.ObjectWriter._configAndWriteValue(ObjectWriter.java:1120)
+	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:950)
+	at org.apache.camel.component.jacksonxml.JacksonXMLDataFormat.marshal(JacksonXMLDataFormat.java:162)
+	at org.apache.camel.support.processor.MarshalProcessor.process(MarshalProcessor.java:61)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$RedeliveryState.run(RedeliveryErrorHandler.java:481)
+	at org.apache.camel.support.ReactiveHelper$Worker.schedule(ReactiveHelper.java:130)
+	at org.apache.camel.support.ReactiveHelper.scheduleMain(ReactiveHelper.java:43)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:88)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:223)
+	at org.apache.camel.component.jetty.CamelContinuationServlet.doService(CamelContinuationServlet.java:218)
+	at org.apache.camel.http.common.CamelServlet.service(CamelServlet.java:79)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1623)
+	at org.eclipse.jetty.servlets.MultiPartFilter.doFilter(MultiPartFilter.java:150)
+	at org.apache.camel.component.jetty.CamelFilterWrapper.doFilter(CamelFilterWrapper.java:43)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.lang.Thread.run(Unknown Source)
+	Suppressed: com.fasterxml.jackson.core.JsonGenerationException: Trying to write END_DOCUMENT when document has no root (ie. trying to output empty document).
+		at com.fasterxml.jackson.dataformat.xml.util.StaxUtil.throwAsGenerationException(StaxUtil.java:47)
+		at com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator.close(ToXmlGenerator.java:1266)
+		at com.fasterxml.jackson.databind.util.ClassUtil.closeOnFailAndThrowAsIOE(ClassUtil.java:488)
+		at com.fasterxml.jackson.databind.ObjectWriter._configAndWriteValue(ObjectWriter.java:1122)
+		... 34 common frames omitted
+	Caused by: javax.xml.stream.XMLStreamException: Trying to write END_DOCUMENT when document has no root (ie. trying to output empty document).
+		at com.ctc.wstx.sw.BaseStreamWriter.throwOutputError(BaseStreamWriter.java:1584)
+		at com.ctc.wstx.sw.BaseStreamWriter.reportNwfStructure(BaseStreamWriter.java:1613)
+		at com.ctc.wstx.sw.BaseStreamWriter._finishDocument(BaseStreamWriter.java:1439)
+		at com.ctc.wstx.sw.BaseStreamWriter.closeCompletely(BaseStreamWriter.java:921)
+		at com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator.close(ToXmlGenerator.java:1261)
+		... 36 common frames omitted
+2019-09-26 10:40:51,117 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 36952 (C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base\target\classes started by thernans in C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base)
+2019-09-26 10:40:51,119 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-09-26 10:40:51,120 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-09-26 10:40:52,015 INFO com.camel.code.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-09-26 10:40:52,867 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:7777/integracao
+2019-09-26 10:40:52,932 INFO com.camel.code.util.UtilApp [main] *********** Sucesso - contexto do Camel executando... ***********
+2019-09-26 10:40:53,229 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 2.342 seconds (JVM running for 3.255)
+2019-09-26 10:41:04,016 INFO com.camel.code.route.R07JettyToRestIntegracao$1 [qtp1112073835-38] ---> Log rotaIntegracao
+2019-09-26 10:41:04,117 INFO com.camel.code.controller.FuncionarioController [http-nio-8080-exec-1] ********** todosFuncionarios - Controller - call - Todos Funcionários
+2019-09-26 10:41:04,202 ERROR org.apache.camel.spi.CamelLogger [qtp1112073835-38] Failed delivery for (MessageId: ID-UDI-8KPZFV2-1569505264010-0-2 on ExchangeId: ID-UDI-8KPZFV2-1569505264010-0-1). Exhausted after delivery attempt: 1 caught: com.fasterxml.jackson.core.JsonParseException: Unexpected character '[' (code 91) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route1            ] [route1            ] [jetty:http://localhost:7777/integracao                                        ] [       189]
+[route1            ] [process1          ] [Processor@0x76a1f792                                                          ] [         2]
+[route1            ] [to1               ] [http4://localhost:8080/api/funcionarios/todos?bridgeEndpoint=true             ] [       163]
+[route1            ] [unmarshal1        ] [unmarshal[org.apache.camel.model.DataFormatDefinition@59f416cc]               ] [         0]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+com.fasterxml.jackson.core.JsonParseException: Unexpected character '[' (code 91) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+	at com.fasterxml.jackson.dataformat.xml.util.StaxUtil.throwAsParseException(StaxUtil.java:37)
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:658)
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:537)
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:29)
+	at com.fasterxml.jackson.core.JsonFactory.createParser(JsonFactory.java:820)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3070)
+	at org.apache.camel.component.jacksonxml.JacksonXMLDataFormat.unmarshal(JacksonXMLDataFormat.java:191)
+	at org.apache.camel.support.processor.UnmarshalProcessor.process(UnmarshalProcessor.java:61)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$RedeliveryState.run(RedeliveryErrorHandler.java:481)
+	at org.apache.camel.support.ReactiveHelper$Worker.schedule(ReactiveHelper.java:130)
+	at org.apache.camel.support.ReactiveHelper.scheduleMain(ReactiveHelper.java:43)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:88)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:223)
+	at org.apache.camel.component.jetty.CamelContinuationServlet.doService(CamelContinuationServlet.java:218)
+	at org.apache.camel.http.common.CamelServlet.service(CamelServlet.java:79)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1623)
+	at org.eclipse.jetty.servlets.MultiPartFilter.doFilter(MultiPartFilter.java:150)
+	at org.apache.camel.component.jetty.CamelFilterWrapper.doFilter(CamelFilterWrapper.java:43)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '[' (code 91) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedChar(StreamScanner.java:653)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2133)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1181)
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:654)
+	... 37 common frames omitted
+2019-09-26 16:25:12,867 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 38592 (C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base\target\classes started by thernans in C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base)
+2019-09-26 16:25:12,870 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-09-26 16:25:12,870 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-09-26 16:25:13,981 INFO com.camel.code.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-09-26 16:25:14,204 WARN org.apache.camel.impl.converter.DefaultTypeConverter [main] Annotation scanning mode loaded 1 type converters. Its recommended to migrate to @Converter(loader = true) for fast type converter mode.
+2019-09-26 16:25:14,231 INFO com.camel.code.util.UtilApp [main] *********** Sucesso - contexto do Camel executando... ***********
+2019-09-26 16:25:14,574 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 2.062 seconds (JVM running for 3.012)
+2019-09-26 16:27:27,420 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 1780 (C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base\target\classes started by thernans in C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base)
+2019-09-26 16:27:27,422 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-09-26 16:27:27,423 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-09-26 16:27:28,296 INFO com.camel.code.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-09-26 16:27:28,470 WARN org.apache.camel.impl.converter.DefaultTypeConverter [main] Annotation scanning mode loaded 1 type converters. Its recommended to migrate to @Converter(loader = true) for fast type converter mode.
+2019-09-26 16:27:29,259 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8082/minha-primeira-rota
+2019-09-26 16:27:29,303 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8083/msg-to-rest
+2019-09-26 16:27:29,309 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8084/rota84
+2019-09-26 16:27:29,316 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8087/integrar-api-funcionarios
+2019-09-26 16:27:29,324 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8088/predicate-teste
+2019-09-26 16:27:29,331 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8089/predicate-teste
+2019-09-26 16:27:29,338 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:9999/integracao
+2019-09-26 16:27:29,345 INFO com.camel.code.util.UtilApp [main] *********** Sucesso - contexto do Camel executando... ***********
+2019-09-26 16:27:29,639 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 2.501 seconds (JVM running for 3.419)
+2019-09-26 16:27:47,307 INFO com.camel.code.controller.FuncionarioController [http-nio-8080-exec-1] ********** todosFuncionarios - Controller - call - Todos Funcionários
