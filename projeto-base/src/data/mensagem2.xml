@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pessoa user="Alice">
+  <nome>Alice</nome>
+  <sobrenome>Silva</sobrenome>
+  <cidade>Uberaba</cidade>
+</pessoa>
