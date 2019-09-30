@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.camel.code.util.UtilApp;
+import com.camel.code.parte01.util.UtilApp;
 
 @SpringBootApplication
 public class ProjetoBaseApplication {
