@@ -24,7 +24,7 @@ public class PessoaController {
 		return service.allPessoas();
 	}
 	
-	@RequestMapping(value="/xml", produces=MediaType.APPLICATION_XML_VALUE)
+	@GetMapping(value="/xml", produces=MediaType.APPLICATION_XML_VALUE)
 	public PessoasXML allPessoasXML(){
 		return service.allPessoasXML();
 	}

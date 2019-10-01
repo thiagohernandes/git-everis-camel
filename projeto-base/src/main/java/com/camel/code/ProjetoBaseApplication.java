@@ -10,7 +10,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.camel.code.parte01.util.UtilApp;
-import com.camel.code.parte02.interceptor.XpathInterceptorRoute;
 
 @SpringBootApplication
 public class ProjetoBaseApplication {
@@ -35,7 +34,7 @@ public class ProjetoBaseApplication {
 //		listaRoutes.add(new R04Http4PredicateChoice());
 //		listaRoutes.add(new R05Bean());
 //		listaRoutes.add(new R06JettyToRestIntegracao());
-		listaRoutes.add(new XpathInterceptorRoute());
+	//	listaRoutes.add(new C00BeanClass());
 		utilApp.runContextCamel(listaRoutes,4000,true);
 		
 	}  
