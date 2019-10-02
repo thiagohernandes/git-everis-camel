@@ -9,13 +9,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.camel.code.parte01.route.R01PrimeiraRotaJetty;
-import com.camel.code.parte01.route.R02JettyToRest;
-import com.camel.code.parte01.route.R03Http4Processor;
-import com.camel.code.parte01.route.R04Http4PredicateChoice;
-import com.camel.code.parte01.route.R05Bean;
-import com.camel.code.parte01.route.R06JettyToRestIntegracao;
-import com.camel.code.parte01.util.UtilApp;
+import com.camel.code.route.R01PrimeiraRotaJetty;
+import com.camel.code.route.R02JettyToRest;
+import com.camel.code.route.R03Http4Processor;
+import com.camel.code.route.R04Http4PredicateChoice;
+import com.camel.code.route.R05Bean;
+import com.camel.code.route.R06JettyToRestIntegracao;
+import com.camel.code.util.UtilApp;
 
 @SpringBootApplication
 public class ProjetoBaseApplication {
