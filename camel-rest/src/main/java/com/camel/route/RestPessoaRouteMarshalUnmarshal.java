@@ -1,15 +1,17 @@
 package com.camel.route;
 
+import javax.xml.bind.JAXBContext;
+
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;
 import org.apache.camel.builder.RouteBuilder;
+import org.apache.camel.model.dataformat.JaxbDataFormat;
 import org.apache.camel.model.dataformat.JsonLibrary;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
+import com.camel.domain.Pessoa;
 import com.camel.domain.PessoaJSON;
-import com.camel.processor.PessoaProcessorJsonToXml;
-import com.camel.processor.PessoaProcessorXmlToJson;
 
 @Component
 @Configuration
@@ -50,6 +52,7 @@ public class RestPessoaRouteMarshalUnmarshal extends RouteBuilder{
 				exchange.getIn().setBody("<pessoas><pessoa><idade>22</idade><nome>Beltrano</nome></pessoa><pessoa><idade>27</idade><nome>Alana</nome></pessoa><pessoa><idade>39</idade><nome>Filisbino</nome></pessoa></pessoas>");
 			}
     	})
+		.unmarshal().json(JsonLibrary.Jackson, PessoaJSON[].class)
 		.log("log 2 ${body}")
 	//	.unmarshal().json()
 	//	

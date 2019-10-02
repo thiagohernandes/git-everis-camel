@@ -1,4 +1,4 @@
-package com.everis.kibana.controller;
+package com.everis.controller;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.everis.kibana.model.Time;
-import com.everis.kibana.service.TimeService;
+import com.everis.model.Time;
+import com.everis.service.TimeService;
 
 @RestController
 @RequestMapping("/api/times")

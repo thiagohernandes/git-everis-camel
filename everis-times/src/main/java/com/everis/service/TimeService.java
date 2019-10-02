@@ -1,12 +1,12 @@
-package com.everis.kibana.service;
+package com.everis.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.everis.kibana.model.Time;
-import com.everis.kibana.repository.TimeRepositoryFake;
+import com.everis.model.Time;
+import com.everis.repository.TimeRepositoryFake;
 
 @Service
 public class TimeService {

@@ -1,4 +1,4 @@
-package com.everis.kibana.model;
+package com.everis.model;
 
 import lombok.Getter;
 import lombok.NonNull;
