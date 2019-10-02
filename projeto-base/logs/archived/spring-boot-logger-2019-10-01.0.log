@@ -1,0 +1,97 @@
+2019-10-01 08:28:09,567 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 27236 (C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base\target\classes started by thernans in C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base)
+2019-10-01 08:28:09,572 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-10-01 08:28:09,572 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-10-01 08:28:10,540 INFO com.camel.code.parte01.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-10-01 08:28:10,619 ERROR com.camel.code.parte01.util.UtilApp [main] *********** Erro
+2019-10-01 08:28:10,746 INFO com.camel.code.parte01.util.UtilApp [main] *********** Sucesso - contexto do Camel executando... ***********
+2019-10-01 08:28:11,074 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 1.738 seconds (JVM running for 2.602)
+2019-10-01 08:40:17,404 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 30192 (C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base\target\classes started by thernans in C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base)
+2019-10-01 08:40:17,406 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-10-01 08:40:17,406 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-10-01 08:40:18,302 INFO com.camel.code.parte01.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-10-01 08:40:18,576 INFO com.camel.code.parte01.util.UtilApp [main] *********** Sucesso - contexto do Camel executando... ***********
+2019-10-01 08:40:18,900 ERROR org.apache.juli.logging.DirectJDKLog [main] Failed to start component [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:263)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:195)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:296)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+	at com.camel.code.ProjetoBaseApplication.main(ProjetoBaseApplication.java:22)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:248)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:222)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1119)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1205)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 14 common frames omitted
+2019-10-01 08:40:18,916 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2019-10-01 08:40:28,262 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 26420 (C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base\target\classes started by thernans in C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base)
+2019-10-01 08:40:28,264 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-10-01 08:40:28,265 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-10-01 08:40:29,158 INFO com.camel.code.parte01.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-10-01 08:40:29,457 INFO com.camel.code.parte01.util.UtilApp [main] *********** Sucesso - contexto do Camel executando... ***********
+2019-10-01 08:40:29,783 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 1.745 seconds (JVM running for 2.623)
+2019-10-01 08:41:44,096 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 17476 (C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base\target\classes started by thernans in C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base)
+2019-10-01 08:41:44,098 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-10-01 08:41:44,098 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-10-01 08:41:44,967 INFO com.camel.code.parte01.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-10-01 08:41:45,340 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:9701/bean
+2019-10-01 08:41:45,394 INFO com.camel.code.parte01.util.UtilApp [main] *********** Sucesso - contexto do Camel executando... ***********
+2019-10-01 08:41:45,682 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 1.825 seconds (JVM running for 2.678)
+2019-10-01 08:45:01,324 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 24680 (C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base\target\classes started by thernans in C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base)
+2019-10-01 08:45:01,326 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-10-01 08:45:01,327 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-10-01 08:45:02,243 INFO com.camel.code.parte01.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-10-01 08:45:02,629 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:9701/bean
+2019-10-01 08:45:02,683 INFO com.camel.code.parte01.util.UtilApp [main] *********** Sucesso - contexto do Camel executando... ***********
+2019-10-01 08:45:02,965 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 1.875 seconds (JVM running for 2.792)
+2019-10-01 08:46:19,400 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 34488 (C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base\target\classes started by thernans in C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base)
+2019-10-01 08:46:19,402 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-10-01 08:46:19,403 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-10-01 08:46:20,368 INFO com.camel.code.parte01.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-10-01 08:46:20,790 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:9701/bean
+2019-10-01 08:46:20,850 INFO com.camel.code.parte01.util.UtilApp [main] *********** Sucesso - contexto do Camel executando... ***********
+2019-10-01 08:46:21,159 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 2.036 seconds (JVM running for 2.953)
+2019-10-01 08:46:52,653 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 23448 (C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base\target\classes started by thernans in C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base)
+2019-10-01 08:46:52,655 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-10-01 08:46:52,656 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-10-01 08:46:53,651 INFO com.camel.code.parte01.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-10-01 08:46:54,108 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:9701/bean
+2019-10-01 08:46:54,167 INFO com.camel.code.parte01.util.UtilApp [main] *********** Sucesso - contexto do Camel executando... ***********
+2019-10-01 08:46:54,454 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 2.033 seconds (JVM running for 3.056)
+2019-10-01 08:48:13,936 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 38684 (C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base\target\classes started by thernans in C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base)
+2019-10-01 08:48:13,938 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-10-01 08:48:13,939 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-10-01 08:48:14,845 INFO com.camel.code.parte01.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-10-01 08:48:15,260 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:9701/bean
+2019-10-01 08:48:15,313 INFO com.camel.code.parte01.util.UtilApp [main] *********** Sucesso - contexto do Camel executando... ***********
+2019-10-01 08:48:15,593 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 1.905 seconds (JVM running for 2.79)

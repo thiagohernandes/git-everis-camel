@@ -13,12 +13,13 @@ import com.google.gson.Gson;
 @Component
 public class R02JettyToRest extends RouteBuilder {
 
-	private final String rotaJetty8083 = "jetty://http://localhost:8083/msg-to-rest";
-	private final String rotaJetty8084 = "jetty://http://localhost:8084/rota84";
+	private final String rotaJetty8089 = "jetty://http://localhost:8089/msg-to-rest";
+	private final String rotaJetty8090 = "jetty://http://localhost:8090/rota90";
 	private final String rotaRestFuncionarios = "jetty://http://localhost:8080/api/funcionarios/todos?bridgeEndpoint=true";
-	private final String msgFrom8083 = "msgFrom8083";
-	private final String valorOut8083 = "Esse valor foi setado na chamada do serviço da porta 8083";
-	private final String msgFrom8083Value = "Olá serviço REST!";
+	private final String msgFrom8089 = "msgFrom8089";
+	private final String valorOut8089 = "Esse valor foi setado na chamada do serviço da porta 8089";
+	private final String msgFrom8089Value = "Olá serviço REST!";
+	private String valorTeste = "";
 	
 	@Autowired
 	UtilApp utilApp;
@@ -26,34 +27,35 @@ public class R02JettyToRest extends RouteBuilder {
 	@Override
 	public void configure() throws Exception {
 		
-		from(rotaJetty8083)
+		from(rotaJetty8089)
 			.process(new Processor() {
 	            @Override
 	            public void process(Exchange exchange) throws Exception {
-	               log.info("---> Log 8083");
-	               exchange.setProperty(msgFrom8083, msgFrom8083Value);
+	               log.info("---> Log 8089");
+	               exchange.setProperty(msgFrom8089, msgFrom8089Value);
 	            }
 	        })
 	    	.to(rotaRestFuncionarios)
 	    	.process(new Processor() {
 	            @Override
 	            public void process(Exchange exchange) throws Exception {
-	            	log.info("---> Isso veio da URL 8083: '{}' ", exchange.getProperty(msgFrom8083));
+	            	log.info("---> Isso veio da URL 8089: '{}' ", exchange.getProperty(msgFrom8089));
 	            	log.info("---> Isso será a saída para outro redirecionamento (String): '{}' ", exchange.getIn().getBody(String.class));
 	            	Gson g = new Gson();
 	            	Funcionario[] p = g.fromJson(exchange.getIn().getBody(String.class), Funcionario[].class);
 	            	log.info("---> JSON de objetos de Funcionários '{}' ", g.toJson(p));
-	            	exchange.getOut().setBody(valorOut8083);
+	            	exchange.getOut().setBody(valorOut8089);
+	            	valorTeste = "Valor setado na chamada da rota 8090";
 	            }
 	        })
-	    	.to(rotaJetty8084);
+	    	.to(rotaJetty8090);
 		
-		from(rotaJetty8084)
+		from(rotaJetty8090)
 			.convertBodyTo(String.class)
 			.process(new Processor() {
 	            @Override
 	            public void process(Exchange exchange) throws Exception {
-	               log.info("---> Log 8084 '{}'", exchange.getIn().getBody());
+	               log.info("---> Log 8090 '{}'", valorTeste);
 	            }
 	        });
 	}

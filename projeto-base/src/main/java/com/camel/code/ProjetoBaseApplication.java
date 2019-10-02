@@ -9,12 +9,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import com.camel.code.parte01.route.R01PrimeiraRotaJetty;
+import com.camel.code.parte01.route.R02JettyToRest;
+import com.camel.code.parte01.route.R03Http4Processor;
+import com.camel.code.parte01.route.R04Http4PredicateChoice;
+import com.camel.code.parte01.route.R05Bean;
+import com.camel.code.parte01.route.R06JettyToRestIntegracao;
 import com.camel.code.parte01.util.UtilApp;
 
 @SpringBootApplication
 public class ProjetoBaseApplication {
 
-	@Autowired
+	@Autowired  
 	UtilApp utilApp;
 	
 	public static void main(String[] args) {
@@ -28,13 +34,12 @@ public class ProjetoBaseApplication {
 //		listaRoutes.add(new MoveFilesBean());
 //		utilApp.runContextCamel(listaRoutes,4000,false);
 		// Part 2
-//		listaRoutes.add(new R01PrimeiraRotaJetty());
-//		listaRoutes.add(new R02JettyToRest());
-//		listaRoutes.add(new R03Http4Processor());
-//		listaRoutes.add(new R04Http4PredicateChoice());
-//		listaRoutes.add(new R05Bean());
-//		listaRoutes.add(new R06JettyToRestIntegracao());
-	//	listaRoutes.add(new C00BeanClass());
+		listaRoutes.add(new R01PrimeiraRotaJetty());
+		listaRoutes.add(new R02JettyToRest());
+		listaRoutes.add(new R03Http4Processor());
+		listaRoutes.add(new R04Http4PredicateChoice());
+		listaRoutes.add(new R05Bean());
+		listaRoutes.add(new R06JettyToRestIntegracao());
 		utilApp.runContextCamel(listaRoutes,4000,true);
 		
 	}  
