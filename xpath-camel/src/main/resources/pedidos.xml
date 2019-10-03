@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pedidos>
+    <pedido categoria="eletrônicos">
+        <items>
+            <item>Notebook</item>
+            <item>Celular</item>
+        </items>
+    </pedido>
+    <pedido categoria="livros">
+        <items>
+            <item>Java Design Patterns</item>
+            <item>Python para Iniciantes</item>
+        </items>
+    </pedido>
+</pedidos>
