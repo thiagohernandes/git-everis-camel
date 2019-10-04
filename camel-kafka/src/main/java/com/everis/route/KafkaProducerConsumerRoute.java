@@ -4,6 +4,7 @@ import org.apache.camel.Exchange;
 import org.apache.camel.Processor;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.component.kafka.KafkaConstants;
+import org.springframework.context.annotation.Configuration;
 
 import com.everis.model.Mensagem;
 import com.google.gson.Gson;
@@ -16,7 +17,7 @@ import com.google.gson.Gson;
  * kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic everis-topic --from-beginning
  * */
 
-//@Configuration
+@Configuration
 public class KafkaProducerConsumerRoute extends RouteBuilder {
 
 	@Override
