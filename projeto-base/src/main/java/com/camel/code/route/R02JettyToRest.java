@@ -55,6 +55,9 @@ public class R02JettyToRest extends RouteBuilder {
 			.process(new Processor() {
 	            @Override
 	            public void process(Exchange exchange) throws Exception {
+	               log.info("getOut() " + (exchange.getIn().getBody().toString().trim().length()
+	            		   > 0 ? exchange.getIn().getBody().toString()
+	            		   : "nenhum dado recebido"));
 	               log.info("---> Log 8090 '{}'", valorTeste);
 	            }
 	        });

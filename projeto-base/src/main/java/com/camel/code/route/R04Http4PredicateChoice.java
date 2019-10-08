@@ -30,8 +30,8 @@ public class R04Http4PredicateChoice  extends RouteBuilder {
 				.convertBodyTo(String.class)
 				.setHeader(Exchange.HTTP_METHOD, constant(org.apache.camel.component.http4.HttpMethods.GET))
 				//.to(rotaHttp4)
-				 .to(rotaHttp4Inexistente)
-				//.to(rotaHttp4Empty)
+				// .to(rotaHttp4Inexistente)
+				.to(rotaHttp4Empty)
 				.process(new Processor() {
 		            @Override
 		            public void process(Exchange exchange) throws Exception {

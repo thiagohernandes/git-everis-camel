@@ -1,0 +1,243 @@
+2019-10-02 13:02:46,866 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 33672 (C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base\target\classes started by thernans in C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base)
+2019-10-02 13:02:46,871 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-10-02 13:02:46,872 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-10-02 13:02:48,117 INFO com.camel.code.parte01.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-10-02 13:02:49,204 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8082/minha-primeira-rota
+2019-10-02 13:02:49,245 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8083/msg-to-rest
+2019-10-02 13:02:49,252 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8084/rota84
+2019-10-02 13:02:49,259 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8087/integrar-api-funcionarios
+2019-10-02 13:02:49,267 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8088/predicate-teste
+2019-10-02 13:02:49,275 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8089/predicate-teste
+2019-10-02 13:02:49,283 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:9999/integracao
+2019-10-02 13:02:49,290 INFO com.camel.code.parte01.util.UtilApp [main] *********** Sucesso - contexto do Camel executando... ***********
+2019-10-02 13:02:49,750 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jmsListenerContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/jms/JmsAnnotationDrivenConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.jms.config.DefaultJmsListenerContainerFactory]: Factory method 'jmsListenerContainerFactory' threw exception; nested exception is java.lang.NoSuchMethodError: org.springframework.jms.config.DefaultJmsListenerContainerFactory.setAutoStartup(Z)V
+2019-10-02 13:02:49,767 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.boot.autoconfigure.jms.DefaultJmsListenerContainerFactoryConfigurer.configure(DefaultJmsListenerContainerFactoryConfigurer.java:103)
+
+The following method did not exist:
+
+    org.springframework.jms.config.DefaultJmsListenerContainerFactory.setAutoStartup(Z)V
+
+The method's class, org.springframework.jms.config.DefaultJmsListenerContainerFactory, is available from the following locations:
+
+    jar:file:/C:/Users/thernans/.m2/repository/org/apache/activemq/activemq-all/5.14.5/activemq-all-5.14.5.jar!/org/springframework/jms/config/DefaultJmsListenerContainerFactory.class
+
+It was loaded from the following location:
+
+    file:/C:/Users/thernans/.m2/repository/org/apache/activemq/activemq-all/5.14.5/activemq-all-5.14.5.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.springframework.jms.config.DefaultJmsListenerContainerFactory
+
+2019-10-02 13:03:50,038 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 24668 (C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base\target\classes started by thernans in C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base)
+2019-10-02 13:03:50,041 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-10-02 13:03:50,041 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-10-02 13:03:51,248 INFO com.camel.code.parte01.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-10-02 13:03:52,314 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8082/minha-primeira-rota
+2019-10-02 13:03:52,357 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8083/msg-to-rest
+2019-10-02 13:03:52,364 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8084/rota84
+2019-10-02 13:03:52,372 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8087/integrar-api-funcionarios
+2019-10-02 13:03:52,380 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8088/predicate-teste
+2019-10-02 13:03:52,388 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8089/predicate-teste
+2019-10-02 13:03:52,396 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:9999/integracao
+2019-10-02 13:03:52,403 INFO com.camel.code.parte01.util.UtilApp [main] *********** Sucesso - contexto do Camel executando... ***********
+2019-10-02 13:03:52,994 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jmsListenerContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/jms/JmsAnnotationDrivenConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.jms.config.DefaultJmsListenerContainerFactory]: Factory method 'jmsListenerContainerFactory' threw exception; nested exception is java.lang.NoSuchMethodError: org.springframework.jms.config.DefaultJmsListenerContainerFactory.setAutoStartup(Z)V
+2019-10-02 13:03:53,012 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.boot.autoconfigure.jms.DefaultJmsListenerContainerFactoryConfigurer.configure(DefaultJmsListenerContainerFactoryConfigurer.java:103)
+
+The following method did not exist:
+
+    org.springframework.jms.config.DefaultJmsListenerContainerFactory.setAutoStartup(Z)V
+
+The method's class, org.springframework.jms.config.DefaultJmsListenerContainerFactory, is available from the following locations:
+
+    jar:file:/C:/Users/thernans/.m2/repository/org/apache/activemq/activemq-all/5.14.5/activemq-all-5.14.5.jar!/org/springframework/jms/config/DefaultJmsListenerContainerFactory.class
+
+It was loaded from the following location:
+
+    file:/C:/Users/thernans/.m2/repository/org/apache/activemq/activemq-all/5.14.5/activemq-all-5.14.5.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.springframework.jms.config.DefaultJmsListenerContainerFactory
+
+2019-10-02 13:08:03,252 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 38440 (C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base\target\classes started by thernans in C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base)
+2019-10-02 13:08:03,254 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-10-02 13:08:03,255 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-10-02 13:08:04,420 INFO com.camel.code.parte01.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-10-02 13:08:04,698 WARN org.apache.camel.impl.converter.DefaultTypeConverter [main] Annotation scanning mode loaded 1 type converters. Its recommended to migrate to @Converter(loader = true) for fast type converter mode.
+2019-10-02 13:08:05,516 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8082/minha-primeira-rota
+2019-10-02 13:08:05,558 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8083/msg-to-rest
+2019-10-02 13:08:05,564 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8084/rota84
+2019-10-02 13:08:05,572 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8087/integrar-api-funcionarios
+2019-10-02 13:08:05,580 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8088/predicate-teste
+2019-10-02 13:08:05,590 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8089/predicate-teste
+2019-10-02 13:08:05,599 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:9999/integracao
+2019-10-02 13:08:05,607 INFO com.camel.code.parte01.util.UtilApp [main] *********** Sucesso - contexto do Camel executando... ***********
+2019-10-02 13:08:05,916 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 2.931 seconds (JVM running for 4.124)
+2019-10-02 13:11:38,874 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 22904 (C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base\target\classes started by thernans in C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base)
+2019-10-02 13:11:38,876 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-10-02 13:11:38,877 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-10-02 13:11:39,747 INFO com.camel.code.parte01.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-10-02 13:11:39,902 WARN org.apache.camel.impl.converter.DefaultTypeConverter [main] Annotation scanning mode loaded 1 type converters. Its recommended to migrate to @Converter(loader = true) for fast type converter mode.
+2019-10-02 13:11:40,621 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8082/minha-primeira-rota
+2019-10-02 13:11:40,663 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8089/msg-to-rest
+2019-10-02 13:11:40,669 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8090/rota90
+2019-10-02 13:11:40,676 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8087/integrar-api-funcionarios
+2019-10-02 13:11:40,682 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8088/predicate-teste
+2019-10-02 13:11:40,689 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:9999/integracao
+2019-10-02 13:11:40,696 INFO com.camel.code.parte01.util.UtilApp [main] *********** Sucesso - contexto do Camel executando... ***********
+2019-10-02 13:11:41,002 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 2.353 seconds (JVM running for 3.321)
+2019-10-02 13:11:55,069 INFO com.camel.code.parte01.route.R02JettyToRest$1 [qtp357291163-59] ---> Log 8083
+2019-10-02 13:11:55,161 INFO com.camel.code.parte01.controller.FuncionarioController [http-nio-8080-exec-1] ********** todosFuncionarios get - Controller - call - Todos Funcionários
+2019-10-02 13:11:55,226 INFO com.camel.code.parte01.route.R02JettyToRest$2 [CamelJettyClient(0x26a262d6)-35] ---> Isso veio da URL 8083: 'Olá serviço REST!' 
+2019-10-02 13:11:55,228 INFO com.camel.code.parte01.route.R02JettyToRest$2 [CamelJettyClient(0x26a262d6)-35] ---> Isso será a saída para outro redirecionamento (String): '[{"codigo":221,"nome":"Nelson da Silva","salario":6800.0},{"codigo":432,"nome":"Débora Vieira","salario":9000.0},{"codigo":510,"nome":"Gilson Antunes Braga","salario":7800.0},{"codigo":788,"nome":"Cleusa Dias Duarte","salario":6000.0},{"codigo":105,"nome":"Marcelo Kiven Straus","salario":8100.0}]' 
+2019-10-02 13:11:55,237 INFO com.camel.code.parte01.route.R02JettyToRest$2 [CamelJettyClient(0x26a262d6)-35] ---> JSON de objetos de Funcionários '[{"codigo":221,"nome":"Nelson da Silva","salario":6800.0},{"codigo":432,"nome":"Débora Vieira","salario":9000.0},{"codigo":510,"nome":"Gilson Antunes Braga","salario":7800.0},{"codigo":788,"nome":"Cleusa Dias Duarte","salario":6000.0},{"codigo":105,"nome":"Marcelo Kiven Straus","salario":8100.0}]' 
+2019-10-02 13:11:55,244 INFO com.camel.code.parte01.route.R02JettyToRest$3 [qtp1631047534-67] ---> Log 8084 'Esse valor foi setado na chamada do serviço da porta 8083'
+2019-10-02 13:12:04,004 INFO com.camel.code.parte01.route.R02JettyToRest$3 [qtp1631047534-62] ---> Log 8084 ''
+2019-10-02 13:15:30,020 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 29292 (C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base\target\classes started by thernans in C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base)
+2019-10-02 13:15:30,022 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-10-02 13:15:30,023 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-10-02 13:15:30,880 INFO com.camel.code.parte01.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-10-02 13:15:31,038 WARN org.apache.camel.impl.converter.DefaultTypeConverter [main] Annotation scanning mode loaded 1 type converters. Its recommended to migrate to @Converter(loader = true) for fast type converter mode.
+2019-10-02 13:15:31,747 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8082/minha-primeira-rota
+2019-10-02 13:15:31,789 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8089/msg-to-rest
+2019-10-02 13:15:31,795 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8090/rota90
+2019-10-02 13:15:31,802 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8087/integrar-api-funcionarios
+2019-10-02 13:15:31,808 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8088/predicate-teste
+2019-10-02 13:15:31,815 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:9999/integracao
+2019-10-02 13:15:31,822 INFO com.camel.code.parte01.util.UtilApp [main] *********** Sucesso - contexto do Camel executando... ***********
+2019-10-02 13:15:32,108 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 2.312 seconds (JVM running for 3.265)
+2019-10-02 13:15:40,013 INFO com.camel.code.parte01.route.R02JettyToRest$3 [qtp573242471-67] ---> Log 8090 'null'
+2019-10-02 13:16:32,163 INFO com.camel.code.parte01.route.R02JettyToRest$1 [qtp1214753695-59] ---> Log 8089
+2019-10-02 13:16:32,263 INFO com.camel.code.parte01.controller.FuncionarioController [http-nio-8080-exec-1] ********** todosFuncionarios get - Controller - call - Todos Funcionários
+2019-10-02 13:16:32,330 INFO com.camel.code.parte01.route.R02JettyToRest$2 [CamelJettyClient(0x7a93b263)-34] ---> Isso veio da URL 8089: 'Olá serviço REST!' 
+2019-10-02 13:16:32,331 INFO com.camel.code.parte01.route.R02JettyToRest$2 [CamelJettyClient(0x7a93b263)-34] ---> Isso será a saída para outro redirecionamento (String): '[{"codigo":221,"nome":"Nelson da Silva","salario":6800.0},{"codigo":432,"nome":"Débora Vieira","salario":9000.0},{"codigo":510,"nome":"Gilson Antunes Braga","salario":7800.0},{"codigo":788,"nome":"Cleusa Dias Duarte","salario":6000.0},{"codigo":105,"nome":"Marcelo Kiven Straus","salario":8100.0}]' 
+2019-10-02 13:16:32,340 INFO com.camel.code.parte01.route.R02JettyToRest$2 [CamelJettyClient(0x7a93b263)-34] ---> JSON de objetos de Funcionários '[{"codigo":221,"nome":"Nelson da Silva","salario":6800.0},{"codigo":432,"nome":"Débora Vieira","salario":9000.0},{"codigo":510,"nome":"Gilson Antunes Braga","salario":7800.0},{"codigo":788,"nome":"Cleusa Dias Duarte","salario":6000.0},{"codigo":105,"nome":"Marcelo Kiven Straus","salario":8100.0}]' 
+2019-10-02 13:16:32,346 INFO com.camel.code.parte01.route.R02JettyToRest$3 [qtp573242471-62] ---> Log 8090 'null'
+2019-10-02 13:17:54,389 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 32708 (C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base\target\classes started by thernans in C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base)
+2019-10-02 13:17:54,391 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-10-02 13:17:54,391 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-10-02 13:17:55,253 INFO com.camel.code.parte01.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-10-02 13:17:55,414 WARN org.apache.camel.impl.converter.DefaultTypeConverter [main] Annotation scanning mode loaded 1 type converters. Its recommended to migrate to @Converter(loader = true) for fast type converter mode.
+2019-10-02 13:17:56,227 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8082/minha-primeira-rota
+2019-10-02 13:17:56,269 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8089/msg-to-rest
+2019-10-02 13:17:56,276 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8090/rota90
+2019-10-02 13:17:56,283 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8087/integrar-api-funcionarios
+2019-10-02 13:17:56,289 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8088/predicate-teste
+2019-10-02 13:17:56,295 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:9999/integracao
+2019-10-02 13:17:56,303 INFO com.camel.code.parte01.util.UtilApp [main] *********** Sucesso - contexto do Camel executando... ***********
+2019-10-02 13:17:56,587 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 2.409 seconds (JVM running for 3.333)
+2019-10-02 13:18:00,229 INFO com.camel.code.parte01.route.R02JettyToRest$1 [qtp1636487850-62] ---> Log 8089
+2019-10-02 13:18:00,322 INFO com.camel.code.parte01.controller.FuncionarioController [http-nio-8080-exec-1] ********** todosFuncionarios get - Controller - call - Todos Funcionários
+2019-10-02 13:18:00,385 INFO com.camel.code.parte01.route.R02JettyToRest$2 [CamelJettyClient(0x4d96250)-38] ---> Isso veio da URL 8089: 'Olá serviço REST!' 
+2019-10-02 13:18:00,387 INFO com.camel.code.parte01.route.R02JettyToRest$2 [CamelJettyClient(0x4d96250)-38] ---> Isso será a saída para outro redirecionamento (String): '[{"codigo":221,"nome":"Nelson da Silva","salario":6800.0},{"codigo":432,"nome":"Débora Vieira","salario":9000.0},{"codigo":510,"nome":"Gilson Antunes Braga","salario":7800.0},{"codigo":788,"nome":"Cleusa Dias Duarte","salario":6000.0},{"codigo":105,"nome":"Marcelo Kiven Straus","salario":8100.0}]' 
+2019-10-02 13:18:00,396 INFO com.camel.code.parte01.route.R02JettyToRest$2 [CamelJettyClient(0x4d96250)-38] ---> JSON de objetos de Funcionários '[{"codigo":221,"nome":"Nelson da Silva","salario":6800.0},{"codigo":432,"nome":"Débora Vieira","salario":9000.0},{"codigo":510,"nome":"Gilson Antunes Braga","salario":7800.0},{"codigo":788,"nome":"Cleusa Dias Duarte","salario":6000.0},{"codigo":105,"nome":"Marcelo Kiven Straus","salario":8100.0}]' 
+2019-10-02 13:18:00,402 INFO com.camel.code.parte01.route.R02JettyToRest$3 [qtp1041905665-70] ---> Log 8090 'null'
+2019-10-02 13:21:23,041 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 18716 (C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base\target\classes started by thernans in C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base)
+2019-10-02 13:21:23,043 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-10-02 13:21:23,044 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-10-02 13:21:24,091 INFO com.camel.code.parte01.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-10-02 13:21:24,277 WARN org.apache.camel.impl.converter.DefaultTypeConverter [main] Annotation scanning mode loaded 1 type converters. Its recommended to migrate to @Converter(loader = true) for fast type converter mode.
+2019-10-02 13:21:25,110 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8082/minha-primeira-rota
+2019-10-02 13:21:25,183 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8089/msg-to-rest
+2019-10-02 13:21:25,197 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8090/rota90
+2019-10-02 13:21:25,211 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8087/integrar-api-funcionarios
+2019-10-02 13:21:25,220 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8088/predicate-teste
+2019-10-02 13:21:25,228 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:9999/integracao
+2019-10-02 13:21:25,237 INFO com.camel.code.parte01.util.UtilApp [main] *********** Sucesso - contexto do Camel executando... ***********
+2019-10-02 13:21:25,639 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 2.847 seconds (JVM running for 3.806)
+2019-10-02 13:21:29,539 INFO com.camel.code.parte01.route.R02JettyToRest$1 [qtp736868175-62] ---> Log 8089
+2019-10-02 13:21:29,630 INFO com.camel.code.parte01.controller.FuncionarioController [http-nio-8080-exec-1] ********** todosFuncionarios get - Controller - call - Todos Funcionários
+2019-10-02 13:21:29,704 INFO com.camel.code.parte01.route.R02JettyToRest$2 [CamelJettyClient(0x6ac0b715)-38] ---> Isso veio da URL 8089: 'Olá serviço REST!' 
+2019-10-02 13:21:29,705 INFO com.camel.code.parte01.route.R02JettyToRest$2 [CamelJettyClient(0x6ac0b715)-38] ---> Isso será a saída para outro redirecionamento (String): '[{"codigo":221,"nome":"Nelson da Silva","salario":6800.0},{"codigo":432,"nome":"Débora Vieira","salario":9000.0},{"codigo":510,"nome":"Gilson Antunes Braga","salario":7800.0},{"codigo":788,"nome":"Cleusa Dias Duarte","salario":6000.0},{"codigo":105,"nome":"Marcelo Kiven Straus","salario":8100.0}]' 
+2019-10-02 13:21:29,716 INFO com.camel.code.parte01.route.R02JettyToRest$2 [CamelJettyClient(0x6ac0b715)-38] ---> JSON de objetos de Funcionários '[{"codigo":221,"nome":"Nelson da Silva","salario":6800.0},{"codigo":432,"nome":"Débora Vieira","salario":9000.0},{"codigo":510,"nome":"Gilson Antunes Braga","salario":7800.0},{"codigo":788,"nome":"Cleusa Dias Duarte","salario":6000.0},{"codigo":105,"nome":"Marcelo Kiven Straus","salario":8100.0}]' 
+2019-10-02 13:21:29,726 INFO com.camel.code.parte01.route.R02JettyToRest$3 [qtp27818833-70] ---> Log 8090 'Valor setado na chamada da rota 8090'
+2019-10-02 13:21:44,751 INFO com.camel.code.parte01.route.R02JettyToRest$3 [qtp27818833-65] ---> Log 8090 'Valor setado na chamada da rota 8090'
+2019-10-02 13:22:21,629 INFO com.camel.code.parte01.route.R01PrimeiraRotaJetty$1 [qtp1906029492-54] ---> Log 8082
+2019-10-02 13:22:38,640 INFO com.camel.code.parte01.controller.FuncionarioController [http-nio-8080-exec-3] ********** todosFuncionarios get - Controller - call - Todos Funcionários
+2019-10-02 13:22:38,651 INFO com.camel.code.parte01.route.R03Http4Processor$1 [qtp1202168065-78] ---> JSON de objetos de Funcionários '[{"codigo":221,"nome":"Nelson da Silva","salario":6800.0},{"codigo":432,"nome":"Débora Vieira","salario":9000.0},{"codigo":510,"nome":"Gilson Antunes Braga","salario":7800.0},{"codigo":788,"nome":"Cleusa Dias Duarte","salario":6000.0},{"codigo":105,"nome":"Marcelo Kiven Straus","salario":8100.0}]' 
+2019-10-02 13:23:32,300 INFO com.camel.code.parte01.controller.FuncionarioController [http-nio-8080-exec-5] ********** todosFuncionarios get - Controller - call - Todos Funcionários
+2019-10-02 13:23:32,304 INFO com.camel.code.parte01.route.R04Http4PredicateChoice$1 [qtp1710422448-85] ---> Lista [{"codigo":221,"nome":"Nelson da Silva","salario":6800.0},{"codigo":432,"nome":"Débora Vieira","salario":9000.0},{"codigo":510,"nome":"Gilson Antunes Braga","salario":7800.0},{"codigo":788,"nome":"Cleusa Dias Duarte","salario":6000.0},{"codigo":105,"nome":"Marcelo Kiven Straus","salario":8100.0}]
+2019-10-02 13:23:32,305 INFO com.camel.code.parte01.route.R04Http4PredicateChoice$2 [qtp1710422448-85] ---> Log Predicate AND: [{"codigo":221,"nome":"Nelson da Silva","salario":6800.0},{"codigo":432,"nome":"Débora Vieira","salario":9000.0},{"codigo":510,"nome":"Gilson Antunes Braga","salario":7800.0},{"codigo":788,"nome":"Cleusa Dias Duarte","salario":6000.0},{"codigo":105,"nome":"Marcelo Kiven Straus","salario":8100.0}]
+2019-10-02 13:24:27,713 INFO org.springframework.boot.StartupInfoLogger [main] Starting ProjetoBaseApplication on UDI-8KPZFV2 with PID 20524 (C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base\target\classes started by thernans in C:\Dev\git-everis-treinamentos\git-everis-camel\projeto-base)
+2019-10-02 13:24:27,715 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.6.BUILD-SNAPSHOT, Spring v5.1.8.BUILD-SNAPSHOT
+2019-10-02 13:24:27,715 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-10-02 13:24:28,589 INFO com.camel.code.parte01.util.UtilApp [main] *********** Iniciando o contexto do Camel
+2019-10-02 13:24:28,754 WARN org.apache.camel.impl.converter.DefaultTypeConverter [main] Annotation scanning mode loaded 1 type converters. Its recommended to migrate to @Converter(loader = true) for fast type converter mode.
+2019-10-02 13:24:29,488 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8082/minha-primeira-rota
+2019-10-02 13:24:29,529 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8089/msg-to-rest
+2019-10-02 13:24:29,536 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8090/rota90
+2019-10-02 13:24:29,542 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8087/integrar-api-funcionarios
+2019-10-02 13:24:29,549 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8088/predicate-teste
+2019-10-02 13:24:29,556 WARN org.apache.camel.component.jetty.JettyHttpComponent [main] You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:9999/integracao
+2019-10-02 13:24:29,564 INFO com.camel.code.parte01.util.UtilApp [main] *********** Sucesso - contexto do Camel executando... ***********
+2019-10-02 13:24:29,850 INFO org.springframework.boot.StartupInfoLogger [main] Started ProjetoBaseApplication in 2.361 seconds (JVM running for 3.303)
+2019-10-02 13:24:51,949 ERROR com.camel.code.parte01.route.R04Http4PredicateChoice$4 [qtp250702170-83] ---> Exceção original: 
+org.apache.camel.http.common.HttpOperationFailedException: HTTP operation failed invoking http://localhost:8080/api/funcionarios/todos-inexistente with statusCode: 404
+	at org.apache.camel.component.http4.HttpProducer.populateHttpOperationFailedException(HttpProducer.java:307)
+	at org.apache.camel.component.http4.HttpProducer.process(HttpProducer.java:202)
+	at org.apache.camel.support.AsyncProcessorConverterHelper$ProcessorToAsyncProcessorBridge.process(AsyncProcessorConverterHelper.java:66)
+	at org.apache.camel.processor.SendProcessor.process(SendProcessor.java:130)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:223)
+	at org.apache.camel.processor.Pipeline.doProcess(Pipeline.java:107)
+	at org.apache.camel.processor.Pipeline.lambda$null$2(Pipeline.java:108)
+	at org.apache.camel.support.ReactiveHelper$2.run(ReactiveHelper.java:83)
+	at org.apache.camel.support.ReactiveHelper$Worker.schedule(ReactiveHelper.java:130)
+	at org.apache.camel.support.ReactiveHelper.scheduleMain(ReactiveHelper.java:35)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:158)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:223)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:223)
+	at org.apache.camel.component.jetty.CamelContinuationServlet.doService(CamelContinuationServlet.java:218)
+	at org.apache.camel.http.common.CamelServlet.service(CamelServlet.java:79)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1623)
+	at org.eclipse.jetty.servlets.MultiPartFilter.doFilter(MultiPartFilter.java:150)
+	at org.apache.camel.component.jetty.CamelFilterWrapper.doFilter(CamelFilterWrapper.java:43)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1610)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.lang.Thread.run(Unknown Source)
+2019-10-02 13:25:18,250 INFO com.camel.code.parte01.controller.FuncionarioController [http-nio-8080-exec-2] ********** todosFuncionarios get - Controller - call - Todos Funcionários
+2019-10-02 13:25:38,285 INFO com.camel.code.parte01.route.R06JettyToRestIntegracao$1 [qtp2054997292-89] ---> Log rotaIntegracao
+2019-10-02 13:25:38,293 INFO com.camel.code.parte01.controller.FuncionarioController [http-nio-8080-exec-3] ********** todosFuncionarios get - Controller - call - Todos Funcionários
+2019-10-02 13:25:38,296 INFO com.camel.code.parte01.route.R06JettyToRestIntegracao$2 [qtp2054997292-89] ---> Log rotaRestFuncionarios
+2019-10-02 13:25:38,426 INFO com.camel.code.parte01.route.R06JettyToRestIntegracao$3 [qtp2054997292-89] ---> rotaRestTimes Properties (String): '[{"nome":"Santos","anoFundacao":1912,"mundial":2},{"nome":"Flamengo","anoFundacao":1912,"mundial":1},{"nome":"São Paulo","anoFundacao":1930,"mundial":3},{"nome":"Internacional","anoFundacao":1909,"mundial":1}]' 
+2019-10-02 13:25:38,426 INFO com.camel.code.parte01.route.R06JettyToRestIntegracao$3 [qtp2054997292-89] ---> rotaRestFuncionarios Properties (String): '[{"codigo":221,"nome":"Nelson da Silva","salario":6800.0},{"codigo":432,"nome":"Débora Vieira","salario":9000.0},{"codigo":510,"nome":"Gilson Antunes Braga","salario":7800.0},{"codigo":788,"nome":"Cleusa Dias Duarte","salario":6000.0},{"codigo":105,"nome":"Marcelo Kiven Straus","salario":8100.0}]' 
