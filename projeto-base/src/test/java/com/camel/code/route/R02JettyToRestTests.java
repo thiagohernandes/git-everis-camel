@@ -14,10 +14,12 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 @RunWith(CamelSpringBootRunner.class)
 @SpringBootTest
-public class R01PrimeiraRotaJettyTests {
+public class R02JettyToRestTests {
 
 	private static CamelContext camelContext;
 	private Exchange exchange;
+	private final String msgFrom8089 = "msgFrom8089";
+	private final String msgFrom8089Value = "Olá serviço REST!";
 	
 	@Before
 	public void init() throws Exception {
@@ -27,9 +29,9 @@ public class R01PrimeiraRotaJettyTests {
 	}
 	
 	@Test
-	public void bodyMensagemTest() {
-		exchange.getIn().setBody("Olá primeira rota!");
-		assertEquals(exchange.getIn().getBody().toString(), "Olá primeira rota!");
+	public void msgFromm8089Test() {
+		exchange.setProperty(msgFrom8089, msgFrom8089Value);
+		assertEquals(exchange.getProperty(msgFrom8089),"Olá serviço REST!");
 	}
 	
 }

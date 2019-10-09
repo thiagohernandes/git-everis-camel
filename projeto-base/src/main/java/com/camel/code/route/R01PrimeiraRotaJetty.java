@@ -3,7 +3,6 @@ package com.camel.code.route;
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;
 import org.apache.camel.builder.RouteBuilder;
-import org.springframework.stereotype.Component;
 
 public class R01PrimeiraRotaJetty extends RouteBuilder {
 
